@@ -10,18 +10,50 @@ export default function DrawerContainer(props) {
     <View style={styles.content}>
       <View style={styles.container}>
         <MenuButton
-          title="HOME"
+          title="Home"
           source={require("../../../assets/icons/home.png")}
           onPress={() => {
-            navigation.navigate("Home");
+            navigation.navigate("Tab");
             navigation.closeDrawer();
           }}
         />
         <MenuButton
-          title="CATEGORIES"
+          title="A COY TRAINERS"
           source={require("../../../assets/icons/category.png")}
           onPress={() => {
-            navigation.navigate("Categories");
+            navigation.navigate("Trainers");
+            navigation.closeDrawer();
+          }}
+        />
+        <MenuButton
+          title="PLATOON"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("Platoon");
+            navigation.closeDrawer();
+          }}
+        />
+         <MenuButton
+          title="BEAT AND PATROL"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("BeatList");
+            navigation.closeDrawer();
+          }}
+        />
+        <MenuButton
+          title="NEWS & FEEDS"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("NewsList");
+            navigation.closeDrawer();
+          }}
+        />
+          <MenuButton
+          title="ABOUT US"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("AboutUs");
             navigation.closeDrawer();
           }}
         />
@@ -33,6 +65,23 @@ export default function DrawerContainer(props) {
             navigation.closeDrawer();
           }}
         />
+         <MenuButton
+          title="Post"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("AddPost");
+            navigation.closeDrawer();
+          }}
+        />
+         <MenuButton
+          title="Chat"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("Message");
+            navigation.closeDrawer();
+          }}
+        />
+       
       </View>
     </View>
   );

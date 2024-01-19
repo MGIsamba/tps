@@ -1,6 +1,69 @@
 import { Text } from 'react-native';
 import React, { Component } from 'react';
-import { recipes, categories, ingredients } from './dataArrays';
+import {dnews, news, tdetail,recipes, categories, trainers, ingredients } from './dataArrays';
+
+
+export function getNews(newId) {
+  const newsArray = [];
+  dnews.map(data => {
+    if (data.newId == newId) {
+      newsArray.push(data);
+    }
+  });
+  return  newsArray;
+}
+export function getNewsName(newId) {
+  let name;
+  news.map(data => {
+    if (data.id == newId) {
+      name = data.name;
+    }
+  });
+  return name;
+}
+
+
+
+export function getTrainersById(trainerId) {
+  let trainer;
+  trainers.map(data => {
+    if (data.id == trainerId) {
+      trainer = data;
+    }
+  });
+  return trainer;
+}
+export function getTrainersName(trainerId) {
+  let name;
+  trainers.map(data => {
+    if (data.id == trainerId) {
+      name = data.name;
+    }
+  });
+  return name;
+}
+export function getTrainers(trainerId) {
+  const trainersArray = [];
+  tdetail.map(data => {
+    if (data.trainerId == trainerId) {
+      trainersArray.push(data);
+    }
+  });
+  return  trainersArray;
+}
+
+export function getNumberOfTrainers(trainerId) {
+  let count = 0;
+  tdetail.map(data => {
+    if (data. trainerId ==  trainerId) {
+      count++;
+    }
+  });
+  return count;
+}
+
+
+
 
 export function getCategoryById(categoryId) {
   let category;

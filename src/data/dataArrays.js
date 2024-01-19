@@ -1,42 +1,264 @@
-export const categories = [
+//Beat & Patrol
+
+//news 
+
+export const sliderDataEvent = [
   {
-    id: 3,
-    name: 'Cookies',
-    photo_url:
-    'https://www.telegraph.co.uk/content/dam/Travel/2019/January/france-food.jpg?imwidth=1400'
+    title: 'Event One',
+    image: require('../../assets/images/homescreen/game-1.jpeg'),
   },
   {
-    id: 1,
-    name: 'Mexican Food',
-    photo_url: 'https://ak1.picdn.net/shutterstock/videos/19498861/thumb/1.jpg'
+    title: 'Event Two',
+    image: require('../../assets/images/homescreen/game-5.jpeg'),
   },
   {
-    id: 2,
-    name: 'Italian Food',
-    photo_url:
-      'https://images.unsplash.com/photo-1533777324565-a040eb52facd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
-  },
-  {
-    id: 4,
-    name: 'Smoothies',
-    photo_url:
-    'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/still-life-of-three-fresh-smoothies-in-front-of-royalty-free-image-561093647-1544042068.jpg?crop=0.715xw:0.534xh;0.0945xw,0.451xh&resize=768:*'
-  },
-  {
-    id: 0,
-    name: 'Pizza',
-    photo_url: 'https://amp.businessinsider.com/images/5c084bf7bde70f4ea53f0436-750-563.jpg'
+    title: 'Event Three',
+    image: require('../../assets/images/homescreen/game-6.jpeg'),
   },
 ];
 
-export const recipes = [
+export const trainerEvents = [
   {
-    recipeId: 122,
-    categoryId: 3,
+    poster: require('../../assets/images/homescreen/game-10.jpeg'),
+    title: '15/01/24',
+    subtitle: 'BEAT',
+    isFree: 'No',
+    price: '$25.99',
+    id: '1',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-11.jpeg'),
+    title: '15/01/24',
+    subtitle: 'ZAMU KOMBANIA',
+    isFree: 'No',
+    price: '$19.99',
+    id: '2',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-12.jpeg'),
+    title: '15/01/24',
+    subtitle: 'KILELE POLI',
+    isFree: 'No',
+    price: '$29.99',
+    id: '3',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-13.jpeg'),
+    title: '15/01/24',
+    subtitle: 'WEST',
+    isFree: 'No',
+    price: '$24.99',
+    id: '4',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-14.jpeg'),
+    title: '15/01/24',
+    subtitle: 'MPS',
+    isFree: 'No',
+    price: '$15.99',
+    id: '5',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-15.jpeg'),
+    title: '15/01/24',
+    subtitle: 'Q/MASTER',
+    isFree: 'No',
+    price: '$25.99',
+    id: '6',
+  },
+];
+
+export const recruitsEvents = [
+  {
+    poster: require('../../assets/images/homescreen/game-13.jpeg'),
+    title: '16/01/24',
+    subtitle: 'Beats & Patrol',
+    isFree: 'Yes',
+    id: '1',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-12.jpeg'),
+    title: '15/01/24',
+    subtitle: 'Beats & Patrol',
+    isFree: 'Yes',
+    id: '2',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-11.jpeg'),
+    title: '14/01/24',
+    subtitle: 'Beats & Patrol',
+    isFree: 'Yes',
+    id: '3',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-10.jpeg'),
+    title: '13/01/24',
+    subtitle: 'Beats & Patrol',
+    isFree: 'Yes',
+    id: '4',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-11.jpeg'),
+    title: '12/01/24',
+    subtitle: 'Beats & Patrol',
+    isFree: 'Yes',
+    id: '5',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-12.jpeg'),
+    title: '11/01/24',
+    subtitle: 'Beats & Patrol',
+    isFree: 'No',
+    id: '6',
+  },
+];
+
+
+
+
+//news 
+
+export const sliderData = [
+  {
+    title: 'First New',
+    image: require('../../assets/images/homescreen/game-1.jpeg'),
+  },
+  {
+    title: 'Second New',
+    image: require('../../assets/images/homescreen/game-2.jpeg'),
+  },
+  {
+    title: 'Third New',
+    image: require('../../assets/images/homescreen/game-3.jpeg'),
+  },
+];
+
+export const paidGames = [
+  {
+    poster: require('../../assets/images/homescreen/game-7.jpeg'),
+    title: 'KUWAHI KAZINI',
+    subtitle: '15/01/24',
+    isFree: 'No',
+    price: '$25.99',
+    id: '1',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-8.jpeg'),
+    title: 'Platoon za fatique',
+    subtitle: '14/01/24',
+    isFree: 'No',
+    price: '$19.99',
+    id: '2',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-9.jpeg'),
+    title: 'Ratiba ya Wanafunzi',
+    subtitle: '13/01/24',
+    isFree: 'No',
+    price: '$29.99',
+    id: '3',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-10.jpeg'),
+    title: 'Muhadhara saa Tano',
+    subtitle: '13/01/24',
+    isFree: 'No',
+    price: '$24.99',
+    id: '4',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-1.jpeg'),
+    title: 'Vifaa vya usafi kombania',
+    subtitle: '12/01/24',
+    isFree: 'No',
+    price: '$15.99',
+    id: '5',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-2.jpeg'),
+    title: 'Ratiba ya Wanafunzi',
+    subtitle: '12/01/24',
+    isFree: 'No',
+    price: '$25.99',
+    id: '6',
+  },
+];
+
+export const freeGames = [
+  {
+    poster: require('../../assets/images/homescreen/game-1.jpeg'),
+    title: '15/01/24',
+    subtitle: 'UKAGUZI',
+    isFree: 'Yes',
+    id: '1',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-9.jpeg'),
+    title: '12/01/24',
+    subtitle: 'MAFUNZO MAALUMU KWA WALIMU',
+    isFree: 'Yes',
+    id: '2',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-8.jpeg'),
+    title: '10/01/24',
+    subtitle: 'UGENI KUTOKA PHQ/DODOMA',
+    isFree: 'Yes',
+    id: '3',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-7.jpeg'),
+    title: '07/01/24',
+    subtitle: 'UKAGUZI',
+    isFree: 'Yes',
+    id: '4',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-6.jpeg'),
+    title: '05/01/24',
+    subtitle: 'MAFUNZO YA RECRUITS',
+    isFree: 'Yes',
+    id: '5',
+  },
+  {
+    poster: require('../../assets/images/homescreen/game-7.jpeg'),
+    title: '04/01/24',
+    subtitle: 'UKAGUZI',
+    isFree: 'No',
+    id: '6',
+  },
+];
+
+
+
+//end
+export const news = [
+  {
+    id: 0,
+    name: 'ASSISTANT SUPERINTENDENT',
+    photo_url:
+    require('../../assets/platoon/plt1/23.jpg')
+  },
+  {
+    id: 1,
+    name: 'INSPECTOR',
+    photo_url:
+    require('../../assets/platoon/plt1/23.jpg')
+  },
+
+]
+
+export const dnews = [
+  { 
+
+    dnewId: 1,
+    newId: 0,
+    name: 'ASP - PAZZIA',
+    position: 'OC A COY',
     title: 'Oatmeal Cookies',
-    photo_url: 'https://www.texanerin.com/content/uploads/2019/06/nobake-chocolate-cookies-1-650x975.jpg',
+    photo_url:  require('../../assets/images/diablo-4.jpeg'),
     photosArray: [
-      'https://www.texanerin.com/content/uploads/2019/06/nobake-chocolate-cookies-1-650x975.jpg',
+      require('../../assets/platoon/plt1/23.jpg'),
       "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
       'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
       'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
@@ -47,12 +269,1811 @@ export const recipes = [
     description:
       '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
   },
+  
+  { 
+
+    dnewId: 1,
+    newId: 0,
+    name: 'ASP - RUSENDERA',
+    position: '2nd OC A COY',
+    title: 'Oatmeal Cookies',
+    photo_url:  require('../../assets/images/diablo-4.jpeg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  
+
+]
+
+
+
+
+
+export const trainers = [
   {
-    recipeId: 3,
-    categoryId: 4,
-    title: 'Triple Berry Smoothie',
+    id: 0,
+    name: 'ASSISTANT SUPERINTENDENT OF POLICE',
+    photo_url: require('../../assets/trainers/avator.png'),
+    
+  },
+  {
+    id: 1,
+    name: 'INSPECTOR OF POLICE',
     photo_url:
-      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png?crop=0.803xw:0.923xh;0.116xw,0.00510xh&resize=768:*',
+    require('../../assets/trainers/avator.png'),
+  },
+  {
+    id: 2,
+    name: 'ASSISTANT INSPECTOR OF POLICE',
+    position: '',
+    photo_url:
+    require('../../assets/trainers/avator.png'),
+  },
+  {
+    id: 3,
+    name: 'SERGENT OF POLICE',
+    position: '',
+    photo_url:
+    require('../../assets/trainers/avator.png'),
+  },
+
+  {
+    id: 4,
+    name: 'CORPORAL',
+    position: 'MASOMONI',
+    photo_url:
+    require('../../assets/trainers/avator.png'),
+  },
+
+  {
+    id: 5,
+    name: 'POLICE CONSTABLE',
+    position: 'MASOMONI',
+    photo_url:
+    require('../../assets/trainers/avator.png'),
+  },
+
+ 
+
+
+]
+
+export const tdetail = [
+  { 
+
+    detailId: 0,
+    trainerId: 0,
+    name: 'ASP - PAZZIA',
+    position: 'OC A COY',
+    title: 'Oatmeal Cookies',
+    photo_url:  require('../../assets/trainers/pazzia.jpeg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  
+  { 
+
+    detailId: 0,
+    trainerId: 0,
+    name: 'ASP - RUSENDERA',
+    position: '2nd OC A COY',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/trainers/pazzia.jpeg'),
+    photosArray: [
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  
+  { 
+
+    detailId: 1,
+    trainerId: 1,
+    name: 'INSP - NGOWI',
+    position: 'OFISI KUU',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - GABRIEL',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - MWESIGE',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - NEEMA',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - MACHAULE',
+    position: 'A COY COORDINATOR',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - MWAMBINGUL',
+    position: 'TEHAMA',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - MASSAWE',
+    position: 'MIRADI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - MWAKATIKA',
+    position: 'DOG & HORSE',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - SIMUMBA',
+    position: 'Q/MASTER',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - YUSUFU',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },{ 
+
+    detailId: 2,
+    trainerId: 2,
+    name: 'A/INSP - DIGNA',
+    position: 'MATRONI MKUU ACOY',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'E.3143 - SGT MDOE',
+    position: 'COY S/MAJOR',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'E.4922 - SGT MICHAEL',
+    position: 'MPS',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'WP.3373 - SGT GETRUDA',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'E.7003 - SGT MODEST',
+    position: 'TEHAMA',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'E.8432 - SGT RAMADHANI',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'E.8481 - SGT BUNGARA',
+    position: 'MPS',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'F.6302 - SGT PETRO',
+    position: 'DOG & HORSE',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'F.3979 - SGT SERGIUS',
+    position: 'MT SECTION',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'F.7775 - SGT PAUL',
+    position: 'ZAHANATI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'H.3196 - SGT VENANCE',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'H.4020 - SGT FABIAN',
+    position: 'PRO',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 3,
+    trainerId: 3,
+    name: 'WP.8765 - SGT ASHA',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'F.5469 - CPL HAGAI',
+    position: 'MIRADI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'F.9218 - CPL MSAFIRI',
+    position: 'MPS',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'F.9492 - CPL HUSSEIN',
+    position: 'Q/MASTER',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'F.4743 - CPL MICHAEL',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'F.9221 - CPL SHANI',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'F.9217 - CPL MWENDO',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'G.1101 - CPL TINDWA',
+    position: 'AMOURY',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'G.6466 - CPL PATRICK',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'G.5144 - CPL SAIMON',
+    position: 'MIRADI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'G.6459 - CPL KIDUMU',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'G.6477 - CPL METHOD',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'G.8094 - CPL MUSABAHI',
+    position: 'TEHAMA',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.9166 - CPL RAMADHANI',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'WP.12160 - CPL SALAMA',
+    position: 'PRO',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'WP.9003 - CPL FLORA',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'WP.9333 - CPL THERESIA',
+    position: 'MIRADI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.1657 - CPL MGONYA',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.3194 - CPL OMARY',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.2984 - CPL MTALI',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.3534 - CPL JEREMIAH',
+    position: 'MIRADI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.3248 - CPL MOSES',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'WP.9377 - CPL CONSOLATA',
+    position: 'MIRADI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.9744 - CPL PASCHAL',
+    position: 'ESTATE',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.4010 - CPL MOHAMED',
+    position: 'PRO',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.1551 - CPL FELIX',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.4307 - CPL CLEOPHACE',
+    position: 'PRO',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'WP.10440 - CPL JENIPHER',
+    position: 'PRO',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'WP.11057 - CPL CHRISTINA',
+    position: 'MT SECTION',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 4,
+    trainerId: 4,
+    name: 'H.9428 - CPL FESTO',
+    position: 'GHALA',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'H.2236 - PC KULWA ',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'H.3250 - PC YOHANA',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'H.9428 - PC FESTO',
+    position: 'GHALA KUU',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'H.1731 - PC RASHIDI',
+    position: 'Q/MASTER',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.1409 - PC LABAN',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.1960 - PC BRUNO',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.2166 - PC HUDSON',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.2510 - PC SALMIN',
+    position: 'Q/MASTER',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.2629 - PC BARNABA',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.2853 - PC MASIGE',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.2895 - PC SILINGI',
+    position: 'MASOMONI',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.3233 - PC JEREMIAH',
+    position: 'MT SECTION',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.3254 - PC MARKI',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.3266 - PC PETRO',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.4381 - PC CHARLES',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.4388 - PC NOEL',
+    position: 'OFISI KUU',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.4538 - PC ZINADINE',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.5357 - PC ALLY',
+    position: 'MT SECTION',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'J.5417 - PC KHATIBU',
+    position: '',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'WP.12856 - PC SIJA',
+    position: 'Q/MASTER',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'WP.12918 - PC SAFINA',
+    position: 'Q/MASTER',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+  { 
+
+    detailId: 5,
+    trainerId: 5,
+    name: 'WP.12872 - PC AMINA',
+    position: 'BAND',
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+
+
+export const categories = [
+  {
+    id: 1,
+    name: 'Platoon No: 1',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  
+  {
+    id: 2,
+    name: 'Platoon No: 2',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 3,
+    name: 'Platoon No: 3',
+    photo_url:
+    require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 4,
+    name: 'Platoon No: 4',
+    photo_url:
+    require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 5,
+    name: 'Platoon No: 5',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 6,
+    name: 'Platoon No: 6',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 7,
+    name: 'Platoon No: 7',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 8,
+    name: 'Platoon No: 8',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+
+  {
+    id: 9,
+    name: 'Platoon No: 9',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 10,
+    name: 'Platoon No: 10',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+  {
+    id: 11,
+    name: 'Platoon No: 11',
+    photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+ {
+  id: 0,
+  name: 'Platoon No: 12',
+  photo_url: require('../../assets/platoon/plt1/1.jpg'),
+  },
+ 
+  
+
+];
+
+export const recipes = [
+  { 
+
+    recipeId: 122,
+    trainerId: 1,
+    title: 'Oatmeal Cookies',
+    photo_url: require('../../assets/platoon/plt1/23.jpg'),
+    photosArray: [
+      require('../../assets/platoon/plt1/23.jpg'),
+      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
+      'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
+      'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
+    ],
+    time: '15',
+    ingredients: [[0, '200ml'], [1, '5g'], [2, '300g']],
+    description:
+      '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
+  },
+  {/*
+    recipeId: 3,
+    categoryId: 1,
+    title: 'Triple Berry Smoothie',
+   
     photosArray: [
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png?crop=0.803xw:0.923xh;0.116xw,0.00510xh&resize=768:*',
       'https://www.vitamix.com/media/other/images/xVitamix-Triple-Berry-Smoothie-square-crop__1.jpg.pagespeed.ic.OgTC3ILD3R.jpg',
@@ -66,7 +2087,7 @@ export const recipes = [
       [61, '1/2 liters'],
     ],
     description: 'In a blender, combine all ingredients and blend until smooth. Then divide between 2 cups and top with blackberries, if desired.'
-  },
+  */ },
   {
     recipeId: 2,
     categoryId: 3,
@@ -158,97 +2179,10093 @@ export const recipes = [
     description:
       '-- Preheat fryer to 350°F. Thoroughly mix together all spices. Combine spices with flour, brown sugar and salt. Dip chicken pieces in egg white to lightly coat them, then transfer to flour mixture. Turn a few times and make sure the flour mix is really stuck to the chicken.\n\n -- Repeat with all the chicken pieces. Let chicken pieces rest for 5 minutes so crust has a chance to dry a bit. Fry chicken in batches. Breasts and wings should take 12-14 minutes, and legs and thighs will need a few more minutes. Chicken pieces are done when a meat thermometer inserted into the thickest part reads 165°F. Let chicken drain on a few paper towels when it comes out of the fryer. Serve hot.'
   },
+
+ //platoon 4
   {
     recipeId: 4,
-    categoryId: 1,
-    title: 'Perfect Fish Tacos',
-    photo_url: 'https://hips.hearstapps.com/hmg-prod/images/190307-fish-tacos-112-1553283299.jpg',
-    photosArray: [
-      'http://d2814mmsvlryp1.cloudfront.net/wp-content/uploads/2014/04/WGC-Fish-Tacos-copy-2.jpg',
-      'https://thecozyapron.com/wp-content/uploads/2018/03/baja-fish-tacos_thecozyapron_1.jpg',
-      'https://www.simplyrecipes.com/wp-content/uploads/2017/06/2017-07-22-FishTacos-6.jpg'
-    ],
-    time: '35',
-    ingredients: [
-      [30, 'jucie of 1 '],
-      [24, '2 teaspoons'],
-      [0, '3 tablespoons'],
-      [3, '1 teaspoon'],
-      [31, '1/2 teaspoons'],
-      [32, '1/2 teaspoons'],
-      [4, '2 teaspoons'],
-      [33, '1/2 lb'],
-      [27, '8'],
-      [14, '2 teasponns'],
-      [34, '1']
-    ],
-    description:
-      '-- In a medium shallow bowl, whisk together olive oil, lime juice, paprika, chili powder, cumin, and cayenne. Add cod, tossing until evenly coated. Let marinate 15 minutes. Meanwhile, make slaw: In a large bowl, whisk together mayonnaise, lime juice, cilantro, and honey. Stir in cabbage, corn, and jalapeño. Season with salt and pepper.\n\n -- In a large nonstick skillet over medium-high heat, heat vegetable oil. Remove cod from marinade and season both sides of each filet with salt and pepper. Add fish flesh side-down. Cook until opaque and cooked through, 3 to 5 minutes per side.\n\n -- Let rest 5 minutes before flaking with a fork. Assemble tacos: Serve fish over grilled tortillas with corn slaw and avocado. Squeeze lime juice on top and garnish with sour cream. '
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5611",
+    fullName:		"RC. VICTOR ",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
   },
+  {
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5624",
+    fullName:		"RC. HASANI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5715",
+    fullName:		"RC. DERICK",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5734",
+    fullName:		"RC. FAUSTINE",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5739",
+    fullName:		"RC. LAWRANCE",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5794",
+    fullName:		"RC. ASHRAFU",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5799L",
+    fullName:		"RC. SONGELAEL",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5882",
+    fullName:		"RC. MUSSA",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5915",
+    fullName:		"RC. PRINCEDAVID",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6053",
+    fullName:		"RC. HAMZA",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6074",
+    fullName:		"RC. ALIAMIN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6101",
+    fullName:		"RC. KHALFAN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6228",
+    fullName:		"RC.FRANCIS",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6252",
+    fullName:		"RC. ABUU",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6307",
+    fullName:		"RC. ABAS",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6336",
+    fullName:		"RC. DISMACK",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6342",
+    fullName:		"RC. STEVEN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6435",
+    fullName:		"RC. SELESTINE",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6469",
+    fullName:		"RC. ABDUL",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6504",
+    fullName:		"RC. GEORGE",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6533",
+    fullName:		"RC. ABUBAKAR",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6576",
+    fullName:		"RC. OMARI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6621",
+    fullName:		"RC. JERAD",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6638",
+    fullName:		"RC. ABDULRAHMAN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6667",
+    fullName:		"RC. HASSAN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6784",
+    fullName:		"RC. RAMADHAN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6822",
+    fullName:		"RC. ALI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6827",
+    fullName:		"RC. IS-HAKA",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6843",
+    fullName:		"RC. KHAMIS",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6910",
+    fullName:		"RC. AHMADA ",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6947",
+    fullName:		"RC. AKRAM ",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7008",
+    fullName:		"RC. HASSANI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7098",
+    fullName:		"RC. NURU",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7131",
+    fullName:		"RC. MICHAEL",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7157",
+    fullName:		"RC. AMANI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7161",
+    fullName:		"RC. NASSIR",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7237",
+    fullName:		"RC. FRANCIS",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7299",
+    fullName:		"RC. OMARY",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7349",
+    fullName:		"RC. EMILIAN",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7366",
+    fullName:		"RC. JULIUS",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7417",
+    fullName:		"RC. CHARLES",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7461",
+    fullName:		"RC. REMIJO",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7523",
+    fullName:		"RC. RASHIDI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7687",
+    fullName:		"RC. CLAUDI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7725",
+    fullName:		"RC. AHAZI",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7747",
+    fullName:		"RC. MWANYITA",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7756",
+    fullName:		"RC. PAUL",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7757",
+    fullName:		"RC. GODFREY",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7778",
+    fullName:		"RC. ENOCK",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7793",
+    fullName:		"RC. ADAMU",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7936",
+    fullName:		"RC. JOSEPH",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7959",
+    fullName:		"RC. HEDISON",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8099",
+    fullName:		"RC. IBRAHIM",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8125",
+    fullName:		"RC. DICKSON",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8163",
+    fullName:		"RC. GASTON",
+    campany:		"A-Coy(4)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 13902",
+    fullName:		"RC. HADIJA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14058",
+    fullName:		"RC. ESTER",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14068",
+    fullName:		"RC. ATUKUZWE",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14121",
+    fullName:		"RC. SALOME",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14156",
+    fullName:		"RC. GEORGIA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14164",
+    fullName:		"RC. NAOMI",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14195",
+    fullName:		"RC. NYANZALA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14218",
+    fullName:		"RC. DEBORA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14257",
+    fullName:		"RC. GLORIA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14331",
+    fullName:		"RC. LEONIDA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14376",
+    fullName:		"RC. ZAINAB",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14473",
+    fullName:		"RC. LUCY",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14566",
+    fullName:		"RC. HEAVENLIGHT",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14583",
+    fullName:		"RC. NASMA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14664",
+    fullName:		"RC. THERESIA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14764",
+    fullName:		"RC. EVA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14800",
+    fullName:		"RC. ROSE",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14812",
+    fullName:		"RC. VERONICA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14815",
+    fullName:		"RC. ANNA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14845",
+    fullName:		"RC. LEYLA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14850",
+    fullName:		"RC. RAHEL",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },
+  {
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14938",
+    fullName:		"RC. JUDITH",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },
+  {
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14962",
+    fullName:		"RC. JOANITHA",
+    campany:		"A-Coy(4)",
+    gender:		"Female",
+
+  },
+//platoon 5
   {
     recipeId: 5,
-    categoryId: 1,
-    title: 'Chicken Fajitas',
-    photo_url:
-      'https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Flavorful-Chicken-Fajitas_EXPS_GHBZ18_12540_B08_15_8b.jpg',
-    photosArray: [
-      'https://dadwithapan.com/wp-content/uploads/2015/07/Spicy-Chicken-Fajitas-22-1200x480.jpg',
-      'https://3.bp.blogspot.com/-X-dHj7ORF9Q/XH4ssgTuSZI/AAAAAAAAEig/E46HP9wCfdsvyJFcMTX30cw-ICep8lF9ACHMYCw/s1600/chicken-fajitas-mexican-food-id-149559-buzzerg.jpg',
-      'https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/201403-xl-chipotle-chicken-fajitas.jpg?itok=ghVcI5SQ'
-    ],
-    time: 35,
-    ingredients: [
-      [9, '1/2 teaspoons'],
-      [0, '4 tablespoons'],
-      [1, '1/2 teaspoons'],
-      [30, '2 tablespoons'],
-      [31, '1 teaspoon'],
-      [7, '1 teaspoon'],
-      [24, '1/2 teaspoons'],
-      [3, '1/2 teaspoons'],
-      [21, '1 pound'],
-      [22, '1/2 cup'],
-      [27, '6'],
-      [36, '4'],
-      [37, '1/2'],
-      [38, '1/2']
-    ],
-    description:
-      '-- In a large bowl, combine 2 tablespoons oil, lemon juice and seasonings; add the chicken. Turn to coat; cover. Refrigerate for 1-4 hours In a large skillet, saute peppers and onions in remaining oil until crisp-tender. Remove and keep warm. Drain chicken, discarding marinade. In the same skillet, cook chicken over medium-high heat for 5-6 minutes or until no longer pink.\n\n -- Return pepper mixture to pan; heat through. Spoon filling down the center of tortillas; fold in half. Serve with toppings as desired.'
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5621",
+    fullName:		"RC. SAMWELI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },{
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5660",
+    fullName:		"RC. RASHIDI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
   },
+  {
+    recipeId: 4,
+    categoryId: 4,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5661",
+    fullName:		"RC. SWAIBU",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5701",
+    fullName:		"RC. NASORO",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5742",
+    fullName:		"RC. IMANI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5812",
+    fullName:		"RC. GEOFREY",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+  //platoon 2
+  {
+    recipeId: 1,
+    categoryId: 2,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5877",
+    fullName:		"RC. HEMEDY",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5911",
+    fullName:		"RC. BARAKAEL",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5963",
+    fullName:		"RC. BARAKA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6040",
+    fullName:		"RC. ELIKADO",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 2,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6076",
+    fullName:		"RC. HAMAD",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6122",
+    fullName:		"RC. LUFUNGULO",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6142",
+    fullName:		"RC. ALLY",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6176",
+    fullName:		"RC. MALANDA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6251",
+    fullName:		"RC. ALFRED",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 2,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6270",
+    fullName:		"RC. VICENT",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6323",
+    fullName:		"RC. ABELI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6332",
+    fullName:		"RC. ELIAS",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6333",
+    fullName:		"RC. KISENA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6426",
+    fullName:		"RC. BRIAN",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6445",
+    fullName:		"RC. MOGOSI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6486",
+    fullName:		"RC. MUSTAFA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6532",
+    fullName:		"RC. JUMA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6550",
+    fullName:		"RC. BAHATI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6568",
+    fullName:		"RC. JACKSON",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6618",
+    fullName:		"RC. ELIUDY",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6803",
+    fullName:		"RC. IBRAHIM",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6805",
+    fullName:		"RC. MUSA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6826",
+    fullName:		"RC. ABUBAKAR",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6837",
+    fullName:		"RC. HAJI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6846",
+    fullName:		"RC. ISMAIL",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6959",
+    fullName:		"RC. IBRAHIM",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6966",
+    fullName:		"RC. ALI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6986",
+    fullName:		"RC. SALEH",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7030",
+    fullName:		"RC. JONAS",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7077",
+    fullName:		"RC. ABUBAKAR",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7120",
+    fullName:		"RC. PAUL",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7149",
+    fullName:		"RC. ELIBARIKI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7168",
+    fullName:		"RC. AMOS",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7232",
+    fullName:		"RC. ZACHARIA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7303",
+    fullName:		"RC. FREDY",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7334",
+    fullName:		"RC. GOODLUCK",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7398",
+    fullName:		"RC. SWEETBERT",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7405",
+    fullName:		"RC. ROBERT",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7453",
+    fullName:		"RC. ANORD",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7667",
+    fullName:		"RC. AMAN",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7709",
+    fullName:		"RC. ABDALLA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7802",
+    fullName:		"RC. HUDHAIFA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7833",
+    fullName:		"RC. EZEKIELI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7836",
+    fullName:		"RC. OMARI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7914",
+    fullName:		"RC. JUMA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7946",
+    fullName:		"RC. PIUS",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7990",
+    fullName:		"RC. ALISTELIUS",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8055",
+    fullName:		"RC. SYLVESTER",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8098",
+    fullName:		"RC. MUSA",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8219",
+    fullName:		"RC. SIPI",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13957",
+    fullName:		"RC. NYAMAMBARA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13960",
+    fullName:		"RC. CHRISTINA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13983",
+    fullName:		"RC. EDINA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13986",
+    fullName:		"RC. SHARON",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14020",
+    fullName:		"RC. MIRIAM",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14076",
+    fullName:		"RC. PRISCA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14102",
+    fullName:		"RC. TAUSI",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14129",
+    fullName:		"RC. FATMA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14192",
+    fullName:		"RC. HOSSIANA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 2,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14239",
+    fullName:		"RC. IRENE",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14389",
+    fullName:		"RC. TAUSI",
+    campany:		"A-Coy(1)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14476",
+    fullName:		"RC. REVIDIA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14518",
+    fullName:		"RC. BOKE",
+    campany:		"A-Coy(5)",
+    gender:		"Femalee",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14584",
+    fullName:		"RC. ABIGAL",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14593",
+    fullName:		"RC. FARIDA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14690",
+    fullName:		"RC. MARTHA",
+    campany:		"A-Coy(5)",
+    gender:		"MFemale",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14721",
+    fullName:		"RC. BRIGITA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14801",
+    fullName:		"RC. SCHOLASTICA",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14830",
+    fullName:		"RC. WITNESS",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14858",
+    fullName:		"RC. JULIETH",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  }, {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"JWP.14933",
+    fullName:		"RC. JUDITH",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 5,
+    categoryId: 5,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14977",
+    fullName:		"RC. VIOLETH",
+    campany:		"A-Coy(5)",
+    gender:		"Female",
+
+  },
+  
+//platoon 6
+
+
   {
     recipeId: 6,
-    categoryId: 2,
-    title: 'Buffalo Pizza',
-    photo_url:
-      'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-    photosArray: [
-      'https://www.tablefortwoblog.com/wp-content/uploads/2019/01/buffalo-chicken-pizza-recipe-photos-tablefortwoblog-3-500x500.jpg',
-      'http://pizzachoicema.com/wp-content/uploads/2018/08/Buffalo-Chicken-Pizza.jpg',
-      'https://static1.squarespace.com/static/565bb41ae4b0509ba9fdf769/t/5b9a8e80aa4a998b0be0fcf4/1536855690622/pizza.gif'
-    ],
-    time: 50,
-    ingredients: [
-      [39, '1 lb'],
-      [40, '1 cup'],
-      [41, '1/2 cup'],
-      [42, '1/4 cup'],
-      [43, '2 tablespoons'],
-      [44, '1/2 cup'],
-      [7, '1/4 teaspoons'],
-      [5, '1/4 teaspoons'],
-      [30, '1/4 teaspoons'],
-      [45, '2 oz'],
-      [12, 'for dusting'],
-      [4, '1/2 teaspoons'],
-      [47, '2'],
-      [46, '9 oz']
-    ],
-    description:
-      '-- Place a rack in upper third of oven. Place a large cast-iron skillet on rack and preheat oven to 500° (or as high as your oven will go). Place pizza dough in a large bowl, pour a little oil over, and turn to coat. Cover bowl with plastic and let dough proof at room temperature while pan and oven heat up.\n\n -- Meanwhile, cook hot sauce, marinara sauce, and butter in a medium saucepan over medium heat, stirring occasionally, until butter is melted. Stir in cream, reduce heat to low, and simmer, stirring occasionally, until slightly thickened and warmed through, about 10 minutes. Heat 1 Tbsp. oil in a large skillet over medium-high. Add chicken, toss to coat, then add ¼ cup Buffalo sauce.\n\n -- Cook chicken, tossing occasionally, until heated through, about 2 minutes. Reduce heat and simmer, stirring often, until chicken is well coated and sauce is slightly thickened, about 5 minutes. Meanwhile, whisk yogurt, lemon juice, celery salt, garlic powder, ¼ cup blue cheese, ½ tsp. pepper, and 2 Tbsp. water in a small bowl, adding more water if sauce seems too thick (it should be pourable); set aside.\n\n -- Turn out dough onto a lightly floured work surface. Shape with your hands into a round that’s slightly larger than the cast-iron skillet you’re using. Take hot skillet out of oven (watch that handle!) and place on a heatproof surface. Add a little flour to pan. Lay dough in skillet, then work edges of dough up sides of skillet with your fingertips (use a rubber spatula or wooden spoon if you’re nervous about touching the hot pan). Drizzle a little oil around inside edge of pan so that it trickles behind and underneath dough, which will encourage browning and help it release.\n\n -- Spread about ⅓ cup Buffalo sauce over dough. Arrange mozzarella over, then top with remaining ¼ cup blue cheese. Arrange chicken mixture on top. Bake pizza on top rack until crust and cheese are nicely browned, 15–20 minutes. Transfer skillet to stovetop (again, watch that handle!) and let pizza rest a few minutes. Using a spatula, slide pizza onto a cutting board or platter. Arrange celery over, then top with reserved blue cheese dressing. Season with pepper, then drizzle with oil.'
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5600",
+    fullName:		"RC. ELISHA",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  }, 
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5697",
+    fullName:		"RC. CALITO",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5779",
+    fullName:		"RC. ALFRED",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5782",
+    fullName:		"RC. RUNZEBE",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5791",
+    fullName:		"RC. ELLY",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5804",
+    fullName:		"RC. MANG'ANYI",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5827",
+    fullName:		"RC. TONY",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5984",
+    fullName:		"RC. BONIFHACE",
+    campany:		"A-Coy(5)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6019",
+    fullName:		"RC. JUMANNE",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6042",
+    fullName:		"RC. AMOS",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6075",
+    fullName:		"RC. JAMALI ",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6078",
+    fullName:		"RC. IBRAHIM",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6179",
+    fullName:		"RC. NELSON",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6221",
+    fullName:		"RC. PASCHAL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6264",
+    fullName:		"RC. YUSUPH",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6274",
+    fullName:		"RC. ADINANI",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6345",
+    fullName:		"RC. EMMANUEL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6351",
+    fullName:		"RC. DAVID",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6437",
+    fullName:		"RC. DENIS",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6472",
+    fullName:		"RC. EMMANUEL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J6494",
+    fullName:		"RC. GAUDENCE",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6506",
+    fullName:		"RC. EMMANUEL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6584",
+    fullName:		"RC. JOACHIM",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6607",
+    fullName:		"RC. GWAKI",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6653",
+    fullName:		"RC. OMAR",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6705",
+    fullName:		"RC. KASSIM",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6712",
+    fullName:		"RC. WAMWISIGO",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6726",
+    fullName:		"RC. FEISAL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6783",
+    fullName:		"RC. MAKAME",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6823",
+    fullName:		"RC. MZEE",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6899",
+    fullName:		"RC. MASOUD",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6922",
+    fullName:		"RC. ALI",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7028",
+    fullName:		"RC. CHARLES",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7054",
+    fullName:		"RC. NYAMBEGA",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7090",
+    fullName:		"RC. ALVINE",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7159",
+    fullName:		"RC. MUSSA",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7199",
+    fullName:		"RC. FRANK",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7213",
+    fullName:		"RC. CLEVER",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7313",
+    fullName:		"RC. PAUL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7347",
+    fullName:		"RC. SHARIFU",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7377",
+    fullName:		"RC. ALPHAN",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7404",
+    fullName:		"RC. ALEX",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7496",
+    fullName:		"RC. ELISHA",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7675",
+    fullName:		"RC. ISSA",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7748",
+    fullName:		"RC. FRED",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7771",
+    fullName:		"RC. PAULINE",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7826",
+    fullName:		"RC. APSON",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7912",
+    fullName:		"RC. MGETA",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7934",
+    fullName:		"RC. ISMAIL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8026",
+    fullName:		"RC. ROBERT",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8090",
+    fullName:		"RC. RAFII",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8117",
+    fullName:		"RC. EMMANUEL",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8152",
+    fullName:		"RC. JAMES",
+    campany:		"A-Coy(6)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13917",
+    fullName:		"RC. GROLY",
+    campany:		"A-Coy(6)",
+    gender:		 "Female"
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"wp.13933",
+    fullName:		"RC. DOTTO",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.13990",
+    fullName:		"RC. JOSEPHINE",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14125",
+    fullName:		"RC. WARDA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14148",
+    fullName:		"RC. RHOBINA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14163",
+    fullName:		"RC. ROSEMARY",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14189",
+    fullName:		"RC. FATUMA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"14272",
+    fullName:		"RC. JUDITH",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.14381",
+    fullName:		"RC. MUZDALFAT",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.14399",
+    fullName:		"RC. MASTURA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14468",
+    fullName:		"RC. AYUMI",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14505",
+    fullName:		"RC. LETICIA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14541",
+    fullName:		"RC. SARA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14573",
+    fullName:		"RC. JANE",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14599",
+    fullName:		"RC. ELIZABETH",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP. 14639",
+    fullName:		"RC. KURUTHUM",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+  
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14682",
+    fullName:		"RC. SELINA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14772",
+    fullName:		"RC. CHRISTINA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14781",
+    fullName:		"RC. TUMAINI",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14851",
+    fullName:		"RC. MWANAMKUU",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14944",
+    fullName:		"RC. AZIZA",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 6,
+    categoryId: 6,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14976",
+    fullName:		"RC. SUMBATI",
+    campany:		"A-Coy(6)",
+    gender:		"Female",
+
+  },
+
+
+//platoon 7
+
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5604",
+    fullName:		"RC. NOEL",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5700",
+    fullName:		"RC. DADI",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5710",
+    fullName:		"RC. HOSEA",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5820",
+    fullName:		"RC. CLETUS",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5876",
+    fullName:		"RC. ANTHONY",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5900",
+    fullName:		"RC. INNOCENT",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5906",
+    fullName:		"RC. PASCHAL",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5913",
+    fullName:		"RC. MATHAYO",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6007",
+    fullName:		"RC. JONATHAN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6152",
+    fullName:		"RC. LAURENT",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/1.jpg'),
+    forceNumber:		"J.5926",
+    fullName:		"RC. MANINGI JONAS BURITO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/2.jpg'),
+    forceNumber:		"J.6002",
+    fullName:		"RC. OMARY MAKALA GELEGE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/3.jpg'),
+    forceNumber:		"J.6015",
+    fullName:		"RC. YOHANA MASHAKA MASHIMBA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/4.jpg'),
+    forceNumber:		"J.6027",
+    fullName:			"RC. ABDULAZIZ MBELWA JUMA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+  , {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/5.jpg'),
+    fullName:		"RC. GABRIEL MICHAEL LEBBA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/6.jpg'),
+    forceNumber:		"J.6046",
+    fullName:			"RC. ABUBAKAR MILAU MBWANA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/7.jpg'),
+    forceNumber:		"J.6108",
+    fullName:		"RC. JACKSON PAUL LUWUNGO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/8.jpg'),
+    forceNumber:		"J.6114",
+    fullName:		"RC. ABDALLAH PETER MWANZALIMA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/9.jpg'),
+    fullName:		"RC. GOTTADI RAINOTI MAPUNDA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	 require('../../assets/platoon/plt1/11.jpg'),
+    forceNumber:		"J.6163",
+    fullName:			"RC. KANDALA SAIMON BOAZI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/12.jpg'),
+    forceNumber:		"J.6205",
+    fullName:			"RC. DERICK STRAITON HANTA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/13.jpg'),
+    forceNumber:		"J.6229",
+    fullName:		"RC. WAMBURA WAJANGA MUNUBHI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/14.jpg'),
+    forceNumber:		"J.6267",
+    fullName:		"RC. ROY AMAN MWATONOKA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/15.jpg'),
+    forceNumber:		"J.6369",
+    fullName:		"RC. JACKSON MOSES JACKSON",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/16.jpg'),
+    forceNumber:		"J.6397",
+    fullName:		"RC. CHIZA SAUL MWALUSAKO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/17.jpg'),
+    forceNumber:			"J.6527",
+    fullName:		"RC. SHABANI MOHAMED SHABANI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/18.jpg'),
+    forceNumber:		"J.6561",
+    fullName:		"RC. SAVIOUR LUCAS KILUMILE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/19.jpg'),
+    forceNumber:		"J.6620",
+    fullName:		"RC. MERICK JOSEPH MWANDA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/20.jpg'),
+    forceNumber:		"J.6702",
+    fullName:		"RC. HUSSEIN AMIR IBRAHIM",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/21.jpg'),
+    forceNumber:		"J.6855",
+    fullName:		"RC. NASSORO MOHAMEDI TAMBALA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/22.jpg'),
+    forceNumber:		"J.6870",
+    fullName:		"RC. FEISAL MUSSA CHARLES",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6897",
+    fullName:		"RC. HAMAD OMAR ALI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:	 "J.6923",    
+    fullName:		"RC. YUSSUF RAMADHAN NDUMBU",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6937",
+    fullName:		"RC. ABDILAH SAID OMAR",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:			"J.6938",
+    fullName:		"RC. MOH'D SAID HAMAD",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/24.jpg'),
+    forceNumber:		"J.7010",
+    fullName:		"RC. JOVIN BONIPHACE NDITIYE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/25.jpg'),
+    forceNumber:			"J.7013",
+    fullName:			"RC. GEOFREY FWIMBO MWIZARUBI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/26.jpg'),
+    forceNumber:			"J.7080",
+    fullName:		"RC. VICENT JOELY SAID",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/27.jpg'),
+    forceNumber:			"J.7112",
+    fullName:		"RC. ABRAHAM ATILIO MDENDEMI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/28.jpg'),
+    forceNumber:		"J.7179",
+    fullName:		"RC. INNOCENT JONESTINE MTALEMWA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/29.jpg'),
+    forceNumber:		"J.7248",
+    fullName:			"RC. GEOFREY RENATUS ANGELO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/30.jpg'),
+    forceNumber:		"J.7254",
+    fullName:		"RC. AYUBU SAID KANYAMALA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/31.jpg'),
+    forceNumber:		"J.7274",
+    fullName:		"RC. MUHUNDA DAUDI MNONO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/32.jpg'),
+    forceNumber:		"J.7459",
+    fullName:		"RC. ALEX DEUS GEORGE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/33.jpg'),
+    forceNumber:		"J.7503",
+    fullName:		"RC. OMARI SAIDI KIMWERI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/34.jpg'),
+    forceNumber:		"J.7516",
+    fullName:		"RC. JOSEPH FELIX LWIMBO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/35.jpg'),
+    forceNumber:		"J.7548",
+    fullName:		"RC. EMMANUEL BENARD CHACHA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/36.jpg'),
+    forceNumber:		"J.7569",
+    fullName:		"RC. AIDANI ALEX MAGAZINE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/37.jpg'),
+    forceNumber:		"J.7631",
+    fullName:		"RC. GOMISI SELEMANI MANTAWELA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/38.jpg'),
+    forceNumber:			"J.7679",
+    fullName:		"RC. LUCAS NAZARETH SIMCHIMBA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/39.jpg'),
+    forceNumber:		"J.7691",
+    fullName:		"RC. EXAVEL PAULO VICENT",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/40.jpg'),
+    forceNumber:		"J.7727",
+    fullName:		"RC. CORNEL ANTHONY BAHATI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/41.jpg'),
+    forceNumber:			"J.7728",
+    fullName:			"RC. LOUIS ANTWAN MKUDE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/42.jpg'),
+    forceNumber:		"J.7733",
+    fullName:		"RC. ZUBERI BAKARI LOMBE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/43.jpg'),
+    forceNumber:			"J.7798",
+    fullName:			"RC. DICKSON GERALD NNKO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/44.jpg'),
+    forceNumber:		"J.7803",
+    fullName:			"RC. MUHAMEDI HAJI KHAMIS",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/45.jpg'),
+    forceNumber:		"J.7890",
+    fullName:			"RC. GEOFREY LEONALD MWARABU",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/44.jpg'),
+    forceNumber:		"J.7976",
+    fullName:			"RC. ISSA RAMADHANI SAIDI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/47.jpg'),
+    forceNumber:			"J.7984",
+    fullName:		"RC. GEORGE RICHARD KAMUNDE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/48.jpg'),
+    forceNumber:			"J.8014",
+    fullName:			"RC. LUCIAN STEVEN SIMBILA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/49.jpg'),
+    forceNumber:		"J.8173",
+    fullName:		"RC. CHEDIEL CHAMBUA KAMBONA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/50.jpg'),
+    forceNumber:			"J.8190",
+    fullName:		"RC. HAJI MOHAMED SHAMA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/51.jpg'),
+    forceNumber:		"J.8221",
+    fullName:			"RC. MABANGA SAADATI MABANGA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/52.jpg'),
+    forceNumber:		"WP.13929",
+    fullName:		"WRC. ASHURA AMIRI NDEGE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/53.jpg'),
+    forceNumber:			"WP.13974",
+    fullName:		"WRC. LILIAN DENIS TILLYA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/54.jpg'),
+    forceNumber:		"WP.14033",
+    fullName:		"WRC. ZAINABU HAMAD MTUMBAYAGE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/55.jpg'),
+    forceNumber:			"WP.14083",
+    fullName:		"WRC. AMINA JUMA MATARU",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/56.jpg'),
+    forceNumber:		"WP.14114",
+    fullName:			"WRC. AGNESS MADUKI GERVAS",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/57.jpg'),
+    forceNumber:		"WP.14143",
+    fullName:			"WRC. MIRIAM NELSON MSOKOLO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/58.jpg'),
+    forceNumber:		"WP.14221",
+    fullName:		"WRC. ZAWADI TITO JACOB",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/59.jpg'),
+    forceNumber:		"WP.14223",
+    fullName:		"WRC. NCHAMBI VUMILIA ROBERT",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/60.jpg'),
+    forceNumber:		"WP.14241",
+    fullName:		"WRC. CATHERINE CHARLES MEJA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/61.jpg'),
+    forceNumber:			"WP.14249",
+    fullName:		"WRC. AGNES ERNEST MANG'ANA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/62.jpg'),
+    forceNumber:		"WP.14325",
+    fullName:		"WRC. CATHELINE LAZARO NTALIMA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/63.jpg'),
+    forceNumber:			"WP.14351",
+    fullName:		"WRC. HOPENESS NICHOLAUS MKENDA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/64.jpg'),
+    forceNumber:			"WP.14443",
+    fullName:			"WRC. ADELINA PATRICK MBILAYUNGU",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/64.jpg'),
+    forceNumber:		"WP.14558",
+    fullName:		"WRC. MAGRETH JANUARY MWAMKALIMA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/66.jpg'),
+    forceNumber:		"WP.14617",
+    fullName:		"WRC. AMINA MUSSA HAMISI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/67.jpg'),
+    forceNumber:		"WP.14632",
+    fullName:		"WRC. ANETH JAMES CHACHA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/68.jpg'),
+    forceNumber:		"WP.14647",
+    fullName:		"WRC. PENDO PHILIPO KITULA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/69.jpg'),
+    forceNumber:		"WP.14733",
+    fullName:			"WRC. MARTHA FRANCON KITINYA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/70.jpg'),
+    forceNumber:		"WP.14738",
+    fullName:		"WRC. DORA GHUHENI MGONJA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/71.jpg'),
+    forceNumber:			"WP.14808",
+    fullName:		"WRC. JANETH MASHAKA CHANG'OMBE",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14896",
+    fullName:		"WRC. ASHA AMOUR ALI",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14908",
+    fullName:		"WRC. ZIADA SULEIMAN KHAMIS",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 1,
+    categoryId: 1,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14960",
+    fullName:		"WRC. MERCY ISAYA MOYO",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+//platoon 7
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6201",
+    fullName:		"RC. VINCENT",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6262",
+    fullName:		"RC. RAMADHANI",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+ 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6285",
+    fullName:		"RC. MKUDE",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6350",
+    fullName:		"RC. ALLY",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6357",
+    fullName:		"RC. FRANK",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6405",
+    fullName:		"RC. RICHARD",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6421",
+    fullName:		"RC. ANDREW",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6447",
+    fullName:		"RC. HAMIS",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6483",
+    fullName:		"RC. SULTAN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6496",
+    fullName:		"RC. MOZES",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6540",
+    fullName:		"RC. KELVIN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6582",
+    fullName:		"RC. HAMISI",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6622",
+    fullName:		"RC. ISMAIL",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6646",
+    fullName:		"RC. AYOUB",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6670",
+    fullName:		"RC. MOHAMMED",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6717",
+    fullName:		"RC. MUSHARAF",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6736",
+    fullName:		"RC. OTHMAN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6802",
+    fullName:		"RC. HASSAN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6911",
+    fullName:		"RC. SULEIMAN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6967",
+    fullName:		"RC. ABDILLAH",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7017",
+    fullName:		"RC. SABINUS",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7053",
+    fullName:		"RC. JOHANES",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7O68",
+    fullName:		"RC. KELVIN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7146",
+    fullName:		"RC. RAJABU",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7182",
+    fullName:		"RC. PETRO",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7241",
+    fullName:		"RC. DAVIS",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7295",
+    fullName:		"RC. BRIGHTON",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7339",
+    fullName:		"RC. IBRAHIMU",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7379",
+    fullName:		"RC. PASCHAL",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7443",
+    fullName:		"RC. TADEY",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7480",
+    fullName:		"RC. REINFRID",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7579",
+    fullName:		"RC. JASON",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J7671",
+    fullName:		"RC. PHILBETI",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7732",
+    fullName:		"RC. SELEMANI",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7761",
+    fullName:		"RC. DERICK",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7812",
+    fullName:		"RC. BENJAMIN",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7837",
+    fullName:		"RC. YUSSUF",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7845",
+    fullName:		"RC. JABIRI",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7881",
+    fullName:		"RC. GREGORY",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8010",
+    fullName:		"RC. SAMWEL",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8020",
+    fullName:		"RC. TAMWIDIKE",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8059",
+    fullName:		"RC. FREDDY",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8127",
+    fullName:		"RC. KAYENZE",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8172",
+    fullName:		"RC. MUSHABE",
+    campany:		"A-Coy(7)",
+    gender:		"Male",
+
   },
   {
-    recipeId: 0,
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13910",
+    fullName:		"RC. RUQAYYA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  },
+  
+ 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13924",
+    fullName:		"RC. ZUREHA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13993",
+    fullName:		"RC. GLORIA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14003",
+    fullName:		"RC. ELIZABETH",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14034",
+    fullName:		"RC. KULUSUMU",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14085",
+    fullName:		"RC. HAWA",
+    campany:		"A-Coy(7)",
+    gender:		"MFemale",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14236",
+    fullName:		"RC. LUCY",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14388",
+    fullName:		"RC. MWANAHAMIS",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14400",
+    fullName:		"RC. NASRA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14456",
+    fullName:		"RC. ESTHER",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14497",
+    fullName:		"RC. DORICAS",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14514",
+    fullName:		"RC. OTILIA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14544",
+    fullName:		"RC. EMA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14575",
+    fullName:		"RC. LATIFA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14594",
+    fullName:		"RC. ZAINABU",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14672",
+    fullName:		"RC. REHEMA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14684",
+    fullName:		"RC. CHIKU",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14736",
+    fullName:		"RC. BINTI",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14753",
+    fullName:		"RC. NASMA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14791",
+    fullName:		"RC. DIANA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  },
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14916",
+    fullName:		"RC. JOSEPHINE",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  },
+  
+ 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14936",
+    fullName:		"RC. DEBORA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  }, 
+  {
+    recipeId: 7,
+    categoryId: 7,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14952",
+    fullName:		"RC. PRISCA",
+    campany:		"A-Coy(7)",
+    gender:		"Female",
+
+  },
+  
+  
+//platoon 8
+
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5620",
+    fullName:		"RC. THOMAS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5713",
+    fullName:		"RC. MIHIGO",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5751",
+    fullName:		"RC. YUSUPH",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5753",
+    fullName:		"RC. RAPHAEL",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5861",
+    fullName:		"RC. SADAM",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5971",
+    fullName:		"RC. JACKSON",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5992",
+    fullName:		"RC. DONATI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6028",
+    fullName:		"RC. MALICK",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6049",
+    fullName:		"RC. SAYI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6071",
+    fullName:		"RC. ATHUMANI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6121",
+    fullName:		"RC. ELVAS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6125",
+    fullName:		"RC. BARAKA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6266",
+    fullName:		"RC. NASSIR",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6290",
+    fullName:		"RC. FREDY",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6361",
+    fullName:		"RC. ANDREA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6450",
+    fullName:		"RC. CHARLES",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6465",
+    fullName:		"RC. AMRAN",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6515",
+    fullName:		"RC. ABUU",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },
+  
+ 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6591",
+    fullName:		"RC. SOSPETER",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6666",
+    fullName:		"RC. HAFIDH",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6668",
+    fullName:		"RC. KHAMIS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6671",
+    fullName:		"RC. NASSIR",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6706",
+    fullName:		"RC. KHALID",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6828",
+    fullName:		"RC. SULEIMAN",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6872",
+    fullName:		"RC. SALEH",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6976",
+    fullName:		"RC. ABDULKARIM",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7014",
+    fullName:		"RC. ERICK",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"7055",
+    fullName:		"RC. MAPANGO",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7104",
+    fullName:		"RC. BENARD",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7126",
+    fullName:		"RC. LUCHAGALA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7156",
+    fullName:		"RC. HIMA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7180",
+    fullName:		"RC. JORDAN",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7224",
+    fullName:		"RC. JONAS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7261",
+    fullName:		"RC. CHAMTIGITI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7265",
+    fullName:		"RC. AMOS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7321",
+    fullName:		"RC. SAIDI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  }, 
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7394",
+    fullName:		"RC. WAZIRI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },
+
+
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7445",
+    fullName:		"RC. CLINTON",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7498",
+    fullName:		"RC. ZAKARIA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7538",
+    fullName:		"RC. KASSIM",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7579",
+    fullName:		"RC. NTINGINYA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7603",
+    fullName:		"RC. KIJA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7636",
+    fullName:		"RC. SHAIBU",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7682",
+    fullName:		"RC. HASSANI",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7700",
+    fullName:		"RC. HARUNA",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7742",
+    fullName:		"RC. JULIAS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7758",
+    fullName:		"RC. SYLIVESTER",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7781",
+    fullName:		"RC. ABDUL",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7933",
+    fullName:		"RC. ABDUL-LATIF",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7975",
+    fullName:		"RC. AHMAD",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8011",
+    fullName:		"RC. CHARLES",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8012",
+    fullName:		"RC. SIMON",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8046",
+    fullName:		"RC. DICKSON",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8063",
+    fullName:		"RC. ROGERS",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8210",
+    fullName:		"RC. SHEDRACK",
+    campany:		"A-Coy(8)",
+    gender:		"Male",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13978",
+    fullName:		"RC. MARTHA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13989",
+    fullName:		"RC. HAPPYNESS",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },
+  
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14050",
+    fullName:		"RC. SAUMU",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14124",
+    fullName:		"RC. FRANCISCA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14131",
+    fullName:		"RC. SOPHIA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14173",
+    fullName:		"RC. IRENE",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14274",
+    fullName:		"RC. MARTHA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14285",
+    fullName:		"RC. FRANCISCA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14409",
+    fullName:		"RC. FARHAT",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14455",
+    fullName:		"RC. ELUMINATHA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14492",
+    fullName:		"RC. MARY",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14507",
+    fullName:		"RC. FENIDA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14542",
+    fullName:		"RC. TAUSI",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14597",
+    fullName:		"RC. TAUSI",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14613",
+    fullName:		"RC. ANNA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14677",
+    fullName:		"RC. ELIZABETH",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14708",
+    fullName:		"RC. ESTER",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14809",
+    fullName:		"RC. RECHO",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14839",
+    fullName:		"RC. ESTER",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14919",
+    fullName:		"RC. REGINA",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },{
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14943",
+    fullName:		"RC. HAPPY",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14961",
+    fullName:		"RC. ELIZABETH",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },
+
+  {
+    recipeId: 8,
+    categoryId: 8,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14972",
+    fullName:		"RC. MARY",
+    campany:		"A-Coy(8)",
+    gender:		"Female",
+
+  },
+
+
+//platoon 9 
+
+
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5618",
+    fullName:		"RC. MAJIDI",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5679",
+    fullName:		"RC. SAMSON",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5780",
+    fullName:		"RC. ELISHA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5818",
+    fullName:		"RC. BARAKA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5875",
+    fullName:		"RC. PAUL",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6006",
+    fullName:		"RC. FARAJA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6009",
+    fullName:		"RC. FABIAN",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6037",
+    fullName:		"RC. JAPHET",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6081",
+    fullName:		"RC. BLAIR",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6115",
+    fullName:		"RC. JOHN",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6219",
+    fullName:		"RC. MAKARANGA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6222",
+    fullName:		"RC. RAPHAEL",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6279",
+    fullName:		"RC. GODFREY",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6359",
+    fullName:		"RC. AYUBU",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J6407",
+    fullName:		"RC. OMAR",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6444",
+    fullName:		"RC. STANSLAUS",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6551",
+    fullName:		"RC. REJINALD",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6595",
+    fullName:		"RC. SHAFII",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6654",
+    fullName:		"RC. ASHRAF",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6672",
+    fullName:		"RC. OMAR",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6797",
+    fullName:		"RC. AHMAD",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6842",
+    fullName:		"RC. SHAAME",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6862",
+    fullName:		"RC. WAZIRI",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6900",
+    fullName:		"RC. MSABAH",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6902",
+    fullName:		"RC. SAID",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6962",
+    fullName:		"RC. ABUBAKAR",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.6989",
+    fullName:		"RC. HAMID",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7023",
+    fullName:		"RC. ISAKA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7071",
+    fullName:		"RC. ENOCK",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7110",
+    fullName:		"RC. CHARLES",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7173",
+    fullName:		"RC. VAILON",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7258",
+    fullName:		"RC. MUSA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7273",
+    fullName:		"RC. DELSON",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7381",
+    fullName:		"RC. MAKORI",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7442",
+    fullName:		"RC. MUSA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7543",
+    fullName:		"RC. FRANK",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7576",
+    fullName:		"RC. RICHARD",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7586",
+    fullName:		"RC. DEUS",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7605",
+    fullName:		"RC. BENEDICTOR",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7621",
+    fullName:		"RC. DEUSDEDITH",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7644",
+    fullName:		"RC. MISALABA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7689",
+    fullName:		"RC. ONESMO",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7760",
+    fullName:		"RC. CHARLES",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7772",
+    fullName:		"RC. WANKYO",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7824",
+    fullName:		"RC. INNOCENT",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7925",
+    fullName:		"RC. STEPHANO",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.7957",
+    fullName:		"RC. HAMIS",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J8083",
+    fullName:		"RC. IBRAHIM",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8149",
+    fullName:		"RC. BARAKA",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8162",
+    fullName:		"RC. KELVIN",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"8178",
+    fullName:		"RC. BAHATI",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.8206",
+    fullName:		"RC. RAMADHANI",
+    campany:		"A-Coy(9)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13899",
+    fullName:		"RC. SABRINAH",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13927",
+    fullName:		"RC. JENIPHER",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13982",
+    fullName:		"RC. THERESIA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.13997",
+    fullName:		"RC. PASKAZIA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14030",
+    fullName:		"RC. HUSNA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.14044",
+    fullName:		"RC. IRENE",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14088",
+    fullName:		"RC. SOMOE",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },
+  
+  {
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14278",
+    fullName:		"RC. NKWIMBA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14288",
+    fullName:		"RC. VALERIA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14373",
+    fullName:		"RC. HIDAYA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14461",
+    fullName:		"RC. ELIZABETH",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14499",
+    fullName:		"RC. CHELSEA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14515",
+    fullName:		"RC. AGNES",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14535",
+    fullName:		"RC. PENDO",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.14592",
+    fullName:		"RC. JIDAH",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14628",
+    fullName:		"RC. KULWA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14692",
+    fullName:		"RC. JESCA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14693",
+    fullName:		"RC. GENOVEVA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14844",
+    fullName:		"RC. ROSEMARY",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14867",
+    fullName:		"RC. EVA",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },{
+    recipeId: 9,
+    categoryId: 9,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"WP.14922",
+    fullName:		"RC. MARIAM",
+    campany:		"A-Coy(9)",
+    gender:		"Female",
+
+  },
+  
+  
+  //platoon 10
+  
+ 
+  
+  
+  
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5628",
+    fullName:		"RC. SALEHE",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId:10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },
+  
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(10)",
+    gender:		"Male",
+
+  }, 
+  
+ 
+  
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },{
+    recipeId: 10,
+    categoryId: 10,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+
+//platoon 11
+
+
+ {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, 
+  
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+  {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 11,
+    categoryId: 11,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(11)",
+    gender:		"Male",
+
+  },
+//platoon 12
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRAN ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRAN ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRAN ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRAN ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(12)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+
+  {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  }, {
+    recipeId: 12,
+    categoryId: 0,
+    photo_url:	require('../../assets/platoon/plt1/23.jpg'),
+    forceNumber:		"J.5665",
+    fullName:		"RC. FRANCIS ALPHONCE SIZA",
+    campany:		"A-Coy(1)",
+    gender:		"Male",
+
+  },
+  
+  
+  
+
+  {
+    recipeId: 12,
     categoryId: 0,
     title: 'Classic Lasagna',
     photo_url: 'https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg',
@@ -264,8 +12281,8 @@ export const recipes = [
       '-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.'
   },
   {
-    recipeId: 7,
-    categoryId: 2,
+    recipeId: 12,
+    categoryId: 0,
     title: 'Spaghetti Carbonara',
     photo_url: 'https://truffle-assets.imgix.net/655ce202-862-butternutsquashcarbonara-land.jpg',
     photosArray: [
@@ -288,8 +12305,8 @@ export const recipes = [
       '-- Put the egg yolks into a bowl, finely grate in the Parmesan, season with pepper, then mix well with a fork and put to one side. Cut any hard skin off the pancetta and set aside, then chop the meat. Cook the spaghetti in a large pan of boiling salted water until al dente.\n\n -- Meanwhile, rub the pancetta skin, if you have any, all over the base of a medium frying pan (this will add fantastic flavour, or use 1 tablespoon of oil instead), then place over a medium-high heat. Peel the garlic, then crush with the palm of your hand, add it to the pan and leave it to flavour the fat for 1 minute. Stir in the pancetta, then cook for 4 minutes, or until it starts to crisp up. Pick out and discard the garlic from the pan, then, reserving some of the cooking water, drain and add the spaghetti.\n\n -- Toss well over the heat so it really soaks up all that lovely flavour, then remove the pan from the heat. Add a splash of the cooking water and toss well, season with pepper, then pour in the egg mixture – the pan will help to cook the egg gently, rather than scrambling it. Toss well, adding more cooking water until it’s lovely and glossy. Serve with a grating of Parmesan and an extra twist of pepper.'
   },
   {
-    recipeId: 8,
-    categoryId: 2,
+    recipeId: 12,
+    categoryId: 0,
     title: 'Lazania',
     photo_url: 'https://images8.alphacoders.com/817/817353.jpg',
     photosArray: [
