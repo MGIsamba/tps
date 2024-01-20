@@ -28,32 +28,78 @@ const AddPostScreen = () => {
 
 
   const [image, setImage] = useState(null);
-
-  const takePhotoFromCamera = () => {
-    ImagePicker.launchCameraAsync({
-      width: 1200,
-      height: 780,
-      cropping: true,
-    }).then((result) => {
-      console.log(result);
-      const imageUri = Platform.OS === 'ios' ? image.sourceURL : image.path;
-      setImage(imageUri);
+  const [uploading, setUploading] = useState(false)
   
+
+  const  takePhotoFromCamera = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchCameraAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
     });
+
+    console.log(result);
+
+    if (!result.cancelled) {
+      setImage(result.uri);
+    }
   };
 
-  const choosePhotoFromLibrary = () => {
-    ImagePicker.launchImageLibraryAsync({
-      width: 1200,
-      height: 780,
-      cropping: true,
-    }).then((image) => {
-      console.log(image);
-      const imageUri = Platform.OS === 'ios' ? image.sourceURL : image.path;
-      setImage(imageUri);
-    
+
+  const pickImage = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
     });
+
+    console.log(result);
+
+    if (!result.cancelled) {
+      setImage(result.uri);
+    }
   };
+
+  const uploadImage = async () => {
+    const blob = await new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.onload = function() {
+        resolve(xhr.response);
+      };
+      xhr.onerror = function() {
+        reject(new TypeError('Network request failed'));
+      };
+      xhr.responseType = 'blob';
+      xhr.open('GET', image, true);
+      xhr.send(null);
+    })
+    const ref = firebase.storage().ref().child(`Pictures/Image1`)
+    const snapshot = ref.put(blob)
+    snapshot.on(firebase.storage.TaskEvent.STATE_CHANGED,
+      ()=>{
+        setUploading(true)
+      },
+      (error) => {
+        setUploading(false)
+        console.log(error)
+        blob.close()
+        return 
+      },
+      () => {
+        snapshot.snapshot.ref.getDownloadURL().then((url) => {
+          setUploading(false)
+          console.log("Download URL: ", url)
+          setImage(url)
+          blob.close()
+          return url
+        })
+      }
+      )
+  }
 
   return (
     <View style={styles.container}>
@@ -62,7 +108,18 @@ const AddPostScreen = () => {
    
        {image != null ? <AddImage source={{uri: image}} /> : null}
 
+       {uploading ? (
+          <StatusWrapper>
+            <Text>{transferred} % Completed!</Text>
+            <ActivityIndicator size="large" color="#0000ff" />
+          </StatusWrapper>
+        ) : (
+          <SubmitBtn onPress={uploadImage}>
+            <SubmitBtnText>Post</SubmitBtnText>
+          </SubmitBtn>
+        )}
 
+      
               <InputField
                   placeholder="What's on your mind?"
                   multiline
@@ -82,7 +139,7 @@ const AddPostScreen = () => {
               <ActionButton.Item
                 buttonColor="#3498db"
                 title="Choose Photo"
-                onPress={choosePhotoFromLibrary}>
+                onPress={pickImage}>
                 <Icon name="md-images-outline" style={styles.actionButtonIcon} />
               </ActionButton.Item>
             </ActionButton>
