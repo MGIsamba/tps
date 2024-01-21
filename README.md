@@ -16,20 +16,14 @@ And scan the QR code in the Expo client app.
 
 ## Features
 
-- Recipes List
-- Categories
-- Ingredients
-- Recipes Details Screen
-- Photo Gallery
-- Detailed Description
-- Ingredients button
-- Ingredients List
-- Recipes by Ingredient
+Chat Screen - TPS -Online 
+- Trainer Screen 
+- Platoon Screen
+- Beat Screen- on click PDF View
+- News Screen - on click PDF View
+- About us
 - Search
-- Drawer Menu
-- Navigation Bar
-- Beautiful UI Design Kit
-- Compatible with Expo
-- Highly modularized codebase
+- Post
 
+- 
 Coded by mgi & nasr 
