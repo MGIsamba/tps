@@ -23,12 +23,16 @@ import Icon from 'react-native-vector-icons/Ionicons';
 //import ImagePicker from 'react-native-image-crop-picker';
 //import ImagePicker from 'react-native-image-picker'
 import * as ImagePicker from 'expo-image-picker'
+import {firebase} from '../../../firebase'
 
 const AddPostScreen = () => {
 
 
   const [image, setImage] = useState(null);
   const [uploading, setUploading] = useState(false)
+  const [transferred, setTransferred] = useState(0);
+  const [post, setPost] = useState(null);
+
   
 
   const  takePhotoFromCamera = async () => {
@@ -42,7 +46,7 @@ const AddPostScreen = () => {
 
     console.log(result);
 
-    if (!result.cancelled) {
+    if (!result.canceled) {
       setImage(result.uri);
     }
   };
@@ -59,10 +63,40 @@ const AddPostScreen = () => {
 
     console.log(result);
 
-    if (!result.cancelled) {
+    if (!result.canceled) {
       setImage(result.uri);
     }
   };
+
+  const submitPost = async () => {
+    const imageUrl = await uploadImage();
+    console.log('Image Url: ', imageUrl);
+    console.log('Post: ', post);
+
+    firestore()
+    .collection('posts')
+    .add({
+      userId: user.uid,
+      post: post,
+      postImg: imageUrl,
+      postTime: firestore.Timestamp.fromDate(new Date()),
+      likes: null,
+      comments: null,
+    })
+    .then(() => {
+      console.log('Post Added!');
+      Alert.alert(
+        'Post published!',
+        'Your post has been published Successfully!',
+      );
+      setPost(null);
+    })
+    .catch((error) => {
+      console.log('Something went wrong with added post to firestore.', error);
+    });
+  }
+
+
 
   const uploadImage = async () => {
     const blob = await new Promise((resolve, reject) => {
@@ -100,6 +134,10 @@ const AddPostScreen = () => {
       }
       )
   }
+  
+
+  
+  
 
   return (
     <View style={styles.container}>
@@ -110,7 +148,7 @@ const AddPostScreen = () => {
 
        {uploading ? (
           <StatusWrapper>
-            <Text>{transferred} % Completed!</Text>
+            <Text> {transferred} % Completed!</Text>
             <ActivityIndicator size="large" color="#0000ff" />
           </StatusWrapper>
         ) : (
@@ -163,4 +201,5 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 });
+
 
