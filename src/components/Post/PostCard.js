@@ -1,5 +1,6 @@
-import React, {useContext, useEffect, useState} from 'react';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import React, { useContext, useEffect, useState } from "react";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import moment from "moment";
 
 import {
   Container,
@@ -15,9 +16,9 @@ import {
   Interaction,
   InteractionText,
   Divider,
-} from '../../styles/FeedStyles';
+} from "../../styles/FeedStyles";
 
-import ProgressiveImage from './ProgressiveImage';
+import ProgressiveImage from "./ProgressiveImage";
 
 //import {AuthContext} from '../navigation/AuthProvider';
 
@@ -25,56 +26,47 @@ import ProgressiveImage from './ProgressiveImage';
 //import {TouchableOpacity} from 'react-native-gesture-handler';
 //import firestore from '@react-native-firebase/firestore';
 
-const PostCard = ({item}) => {
+const PostCard = ({ item }) => {
+  likeIcon = item.liked ? "heart" : "heart-outline";
+  likeIconColor = item.liked ? "#2e64e5" : "#333";
 
-
-  likeIcon = item.liked ? 'heart' : 'heart-outline';
-  likeIconColor = item.liked ? '#2e64e5' : '#333';
-
-  
   if (item.likes == 1) {
-    likeText = '1 Like';
+    likeText = "1 Like";
   } else if (item.likes > 1) {
-    likeText = item.likes + ' Likes';
+    likeText = item.likes + " Likes";
   } else {
-    likeText = 'Like';
+    likeText = "Like";
   }
 
   if (item.comments == 1) {
-    commentText = '1 Comment';
+    commentText = "1 Comment";
   } else if (item.comments > 1) {
-    commentText = item.comments + ' Comments';
+    commentText = item.comments + " Comments";
   } else {
-    commentText = 'Comment';
+    commentText = "Comment";
   }
-
-
- 
 
   return (
     <Card>
       <UserInfo>
-        <UserImg source ={item.userImg} />
+        <UserImg source={item.userImg} />
         <UserInfoText>
           <UserName>{item.userName}</UserName>
-          <PostTime>{item.postTime}</PostTime>
+          <PostTime>{moment(item.postTime).toString()}</PostTime>
         </UserInfoText>
       </UserInfo>
       <PostText>{item.post}</PostText>
-       {item.postImg != 'none' ? <PostImg source={item.postImg} /> : <Divider />} 
-
-     
+      {item.postImg != "none" ? <PostImg source={{uri:item.postImg}} /> : <Divider />}
 
       <InteractionWrapper>
-      <Interaction active={item.liked}>
-        <Ionicons name={likeIcon} size={25} color={likeIconColor} />
-        <InteractionText active={item.liked}>{likeText}</InteractionText>
+        <Interaction active={item.liked}>
+          <Ionicons name={likeIcon} size={25} color={likeIconColor} />
+          <InteractionText active={item.liked}>{likeText}</InteractionText>
         </Interaction>
         <Interaction>
           <Ionicons name="md-chatbubble-outline" size={25} />
           <InteractionText>{commentText}</InteractionText>
         </Interaction>
-         
       </InteractionWrapper>
     </Card>
   );
