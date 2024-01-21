@@ -97,18 +97,16 @@ const HomeScreen = ({ navigation }) => {
 
   const getPosts = async () => {
     const postsData = [];
-    await firebase
+     firebase
       .firestore()
       .collection("posts")
-      .get()
-      .then((posts) => {
+      .onSnapshot((posts) => {
         posts.forEach((post) => {
           // doc.data() is never undefined for query doc snapshots
-          console.log("dataaa",post.data());
           postsData.push(post.data());
         });
-      });
         setPosts(postsData);
+      });
   };
 
   return (

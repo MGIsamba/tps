@@ -46,13 +46,14 @@ const PostCard = ({ item }) => {
     commentText = "Comment";
   }
 
+  console.log("dataaa",item.postTime);
   return (
     <Card>
       <UserInfo>
         <UserImg source={item.userImg} />
         <UserInfoText>
           <UserName>{item.userName}</UserName>
-          <PostTime>{moment(item.postTime).toString()}</PostTime>
+          <PostTime>{moment(item.postTime.seconds).toString()}</PostTime>
         </UserInfoText>
       </UserInfo>
       <PostText>{item.post}</PostText>
