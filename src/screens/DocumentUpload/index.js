@@ -1,22 +1,68 @@
 import React, { useState } from 'react';
-import { View, Text, Button, TextInput, Image, Alert, } from 'react-native';
+import { View, Text, Button, TextInput, Alert, TouchableOpacity, } from 'react-native';
 import styles from './styles';
 import { Picker } from '@react-native-picker/picker';
 import * as DocumentPicker from 'expo-document-picker';
+import { db } from '../../../firebase';
+import uploadFile from '../../services/uploadFile';
+import { addDoc, collection } from 'firebase/firestore';
+import { useNavigation } from '@react-navigation/native';
+import CheckButton from '../../components/CheckButton';
+import Ionicon from 'react-native-vector-icons/Ionicons';
+
 
 const DocumentUpload = () => {
-    const [documentType, setDocumentType] = useState('');
+    const navgation = useNavigation();
+    const [documentType, setDocumentType] = useState('pdf');
     const [description, setDescription] = useState('');
     const [documentPreview, setDocumentPreview] = useState(null);
 
 
-    const handleUpload = () => {
-        // Logic to handle document upload
+    const handleUpload = async () => {
+        try {
+            if (!documentPreview) {
+                return Alert.alert("Please select a document");
+            } else if (!description) {
+                return Alert.alert("Please enter description");
+            }
+
+            const response = await uploadFile(documentPreview, "beats");
+
+            const docRef = await addDoc(collection(db, "beats"), {
+                type: documentType,
+                description,
+                url: response,
+            });
+
+            setDocumentPreview(null);
+            setDocumentType('');
+            setDescription('');
+
+            Alert.alert("Document uploaded successfully");
+            navgation.navigate("Beat");
+        } catch (error) {
+            alert(error?.message)
+        }
     };
 
     const handleOnSelectFile = async () => {
         try {
-            const file = await DocumentPicker.getDocumentAsync();
+            if (documentType === "pdf") {
+                const response = await DocumentPicker.getDocumentAsync({
+                    type: "application/pdf",
+                });
+
+                if (response.type === "cancel") return;
+                setDocumentPreview(response);
+            }
+            else {
+                const response = await DocumentPicker.getDocumentAsync({
+                    type: "image/*",
+                });
+
+                if (response.type === "cancel") return;
+                setDocumentPreview(response);
+            }
         } catch (error) {
             Alert.alert(error?.message)
         }
@@ -24,27 +70,60 @@ const DocumentUpload = () => {
 
     return (
         <View style={styles.container}>
+            <View style={styles.sectionContainer}>
+                <Text style={styles.titleText}>Document Type:</Text>
+                <View style={styles.rowContainer}>
+                    <CheckButton
+                        lable="PDF"
+                        check={documentType === "pdf"}
+                        onPress={() => setDocumentType("pdf")}
+                    />
+                    <CheckButton
+                        lable="Image"
+                        check={documentType === "img"}
+                        onPress={() => setDocumentType("img")}
+                    />
+                </View>
+            </View>
+
+            <View style={styles.sectionContainer}>
+                <Text style={styles.titleText}>Description:</Text>
+                <TextInput
+                    style={styles.input}
+                    value={description}
+                    multiline={true}
+                    numberOfLines={4}
+                    onChangeText={setDescription}
+                />
+            </View>
+
             {documentPreview && (
-                <Image source={documentPreview} style={styles.previewImage} />
+                <View style={styles.sectionContainer}>
+                    <Text style={styles.titleText}>Selected Document:</Text>
+                    <View style={styles.rowContainer}>
+                        <Text style={{ marginTop: 10 }}>{documentPreview.name}</Text>
+                        <TouchableOpacity
+                            onPress={() => setDocumentPreview(null)}
+                            style={{ marginLeft: 10 }}
+                        >
+                            <Ionicon
+                                name="close-circle"
+                                size={35}
+                                color={"red"}
+                                onPress={() => setDocumentPreview(null)}
+                            />
+                        </TouchableOpacity>
+                    </View>
+                </View>
             )}
-            <Text>Document Type:</Text>
-            <Picker
-                selectedValue={documentType}
-                onValueChange={(itemValue) => setDocumentType(itemValue)}
-                style={styles.input}
-            >
-                <Picker.Item label="Image" value="image" />
-                <Picker.Item label="PDF" value="pdf" />
-            </Picker>
 
-            <Text>Description:</Text>
-            <TextInput
-                style={styles.input}
-                value={description}
-                onChangeText={setDescription}
-            />
-
-            <Button title={documentPreview ? "Upload" : "Select Document"} onPress={documentPreview ? handleUpload : handleOnSelectFile} />
+            <View style={styles.buttonContainer}>
+                <Button
+                    style={styles.button}
+                    title={documentPreview ? "Upload" : "Select Document"}
+                    onPress={documentPreview ? handleUpload : handleOnSelectFile}
+                />
+            </View>
         </View>
     );
 };
