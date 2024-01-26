@@ -11,12 +11,17 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
     },
+    closeButton: {
+        alignItems: "flex-end",
+        marginRight: -15,
+    },
     buttonContainer: {
         backgroundColor: "#fff",
         marginHorizontal: 20,
         width: windowWidth * 0.8,
         marginVertical: windowHeight / 3,
-        padding: 20,
+        paddingHorizontal: 20,
+        paddingBottom: 20,
         borderRadius: 8,
     },
     chooseText: {},

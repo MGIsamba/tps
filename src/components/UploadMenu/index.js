@@ -1,7 +1,8 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
-import { View, Text, Modal, Button } from 'react-native';
-import styles from './styles';
+import { View, Text, Modal, Button, TouchableOpacity } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
+import styles from './styles';
 
 const UploadMenu = forwardRef((props, ref) => {
     const navigation = useNavigation();
@@ -22,7 +23,8 @@ const UploadMenu = forwardRef((props, ref) => {
     }
 
     return (
-        <Modal visible={modalVisible}
+        <Modal
+            visible={modalVisible}
             style={styles.container}
             animationType="fade"
             transparent={true}
@@ -30,6 +32,12 @@ const UploadMenu = forwardRef((props, ref) => {
         >
             <View style={styles.contentContainer}>
                 <View style={styles.buttonContainer}>
+                    <TouchableOpacity
+                        style={styles.closeButton}
+                        onPress={() => setModalVisible(false)}
+                    >
+                        <Ionicons name="close" size={30} color="black" />
+                    </TouchableOpacity>
                     <Text style={styles.chooseText}>Choose an option:</Text>
                     <View style={styles.textButton}>
                         <Button

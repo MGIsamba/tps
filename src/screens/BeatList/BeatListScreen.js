@@ -25,8 +25,8 @@ import BeatPreview from '../../components/BeatPreview';
 
 
 const BeatListScreen = ({ navigation }) => {
-  const uploadMenuRef = React.createRef();
-  const beatPreviewRef = React.createRef();
+  const uploadMenuRef = React.createRef(null);
+  const beatPreviewRef = React.createRef(null);
 
   const [gamesTab, setGamesTab] = useState(1);
   const [beats, setBeats] = useState([]);
@@ -52,6 +52,10 @@ const BeatListScreen = ({ navigation }) => {
     setGamesTab(value);
   };
 
+  const handleOnOpenUploadMenu = () => {
+    uploadMenuRef?.current?.open();
+  }
+
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -68,12 +72,12 @@ const BeatListScreen = ({ navigation }) => {
           height: 30,
           marginRight: 10,
         }}
-        onPress={() => uploadMenuRef?.current?.open()}
+        onPress={handleOnOpenUploadMenu}
       >
         <Ionicons name="add" size={30} color="black" />
       </TouchableOpacity >
     });
-  }, []);
+  }, [navigation, uploadMenuRef, beatPreviewRef]);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>

@@ -11,16 +11,10 @@ const styles = StyleSheet.create({
         justifyContent: "flex-end",
         alignItems: "center",
     },
-    buttonContainer: {
-        backgroundColor: "#fff",
+    image: {
         width: windowWidth,
-        height: windowHeight * 0.9,
-        padding: 10,
-        borderRadius: 8,
-    },
-    chooseText: {},
-    textButton: {
-        marginVertical: 10,
+        height: windowHeight / 2,
+        resizeMode: "contain",
     },
 });
 
