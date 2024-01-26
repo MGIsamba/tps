@@ -37,7 +37,7 @@ const LoginScreen = ({ navigation }) => {
       console.log(email, password);
       Alert.alert("Login Successsfully")
     } catch (error) {
-      console.error("Login failed: ", error.message);
+      console.error("Login failed with the following error: ", error.message);
     }
   };
 
