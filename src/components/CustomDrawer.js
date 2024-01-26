@@ -14,7 +14,19 @@ import {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
-const CustomDrawer = props => {
+import { signOut } from "firebase/auth";
+import { auth } from "../utils/useAuth"
+
+const CustomDrawer = (props) => {
+  const handleSignOut = async() => {
+    try{
+      await signOut(auth)
+      console.log("Logged Out Successfully");
+    }catch(error){
+      console.error(error.message);
+    }
+  }
+
   return (
     <View style={{flex: 1}}>
       <DrawerContentScrollView
@@ -66,7 +78,7 @@ const CustomDrawer = props => {
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => {}} style={{paddingVertical: 15}}>
+        <TouchableOpacity onPress={handleSignOut} style={{paddingVertical: 15}}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Ionicons name="exit-outline" size={22} />
             <Text
