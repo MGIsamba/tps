@@ -1,6 +1,7 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
-import { View, Text, Modal, Button, Image } from 'react-native';
+import { View, Modal, TouchableOpacity, Image, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
 
 const BeatPreview = forwardRef((props, ref) => {
@@ -25,10 +26,31 @@ const BeatPreview = forwardRef((props, ref) => {
         >
             <View style={styles.container}>
                 <View style={styles.contentContainer}>
+                    <TouchableOpacity
+                        style={styles.closeButton}
+                        onPress={() => setModalVisible(false)}
+                    >
+                        <Ionicons name="close" size={30} color="black" />
+                    </TouchableOpacity>
+
                     <Image
-                        source={{ uri: "https://firebasestorage.googleapis.com/v0/b/acoy-1fede.appspot.com/o/beats%2F6361688images.jpeg?alt=media&token=f73aafb4-b3e2-4bba-9958-089d7e1bed10" }}
+                        source={{
+                            uri: props?.image
+                        }}
                         style={styles.image}
                     />
+                    <View style={styles.sectionContainer}>
+                        <Text style={styles.titleText}>Title</Text>
+                        <Text style={styles.valueText}>{
+                            props?.title
+                        }</Text>
+                    </View>
+                    <View style={styles.sectionContainer}>
+                        <Text style={styles.titleText}>Description</Text>
+                        <Text style={styles.valueText}>{
+                            props?.description
+                        }</Text>
+                    </View>
                 </View>
             </View>
         </Modal >

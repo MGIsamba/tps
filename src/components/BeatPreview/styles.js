@@ -16,10 +16,29 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 20,
         alignItems: "center",
     },
+    closeButton: {
+        position: "absolute",
+        top: 10,
+        right: 10,
+    },
     image: {
         width: windowWidth * 0.9,
         height: windowHeight * 0.4,
         resizeMode: "contain",
+    },
+    sectionContainer: {
+        width: windowWidth * 0.9,
+        padding: 10,
+    },
+    titleText: {
+        fontSize: 16,
+        fontWeight: "bold",
+        fontFamily: "Roboto-Medium",
+
+    },
+    valueText: {
+        fontSize: 14,
+        fontFamily: "Roboto-Regular",
     },
 });
 

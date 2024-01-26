@@ -7,6 +7,7 @@ import {
   ImageBackground,
   TextInput,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Carousel from 'react-native-snap-carousel';
@@ -27,6 +28,7 @@ import BeatPreview from '../../components/BeatPreview';
 const BeatListScreen = ({ navigation }) => {
   const uploadMenuRef = React.createRef(null);
   const beatPreviewRef = React.createRef(null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const [gamesTab, setGamesTab] = useState(1);
   const [beats, setBeats] = useState([]);
@@ -82,7 +84,12 @@ const BeatListScreen = ({ navigation }) => {
       <UploadMenu
         ref={uploadMenuRef}
       />
-      <BeatPreview ref={beatPreviewRef} />
+      <BeatPreview
+        ref={beatPreviewRef}
+        title={selectedItem?.title}
+        description={selectedItem?.description}
+        image={selectedItem?.url}
+      />
       <ScrollView style={{ padding: 20 }}>
         <View
           style={{
@@ -163,7 +170,14 @@ const BeatListScreen = ({ navigation }) => {
               // subTitle={item.subtitle}
               // isFree={item.isFree}
               isFree={"Yes"}
-              onPress={() => beatPreviewRef?.current?.open()}
+              onPress={() => {
+                if (item?.type === "pdf") {
+                  Linking.openURL(item?.url);
+                } else {
+                  setSelectedItem(item);
+                  beatPreviewRef?.current?.open();
+                }
+              }}
             />
           ))}
         {gamesTab == 2 &&

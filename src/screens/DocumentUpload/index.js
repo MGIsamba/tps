@@ -3,7 +3,7 @@ import { View, Text, Button, TextInput, Alert, TouchableOpacity, } from 'react-n
 import styles from './styles';
 import { Picker } from '@react-native-picker/picker';
 import * as DocumentPicker from 'expo-document-picker';
-import { db } from '../../../firebase';
+import { auth, db } from '../../../firebase';
 import uploadFile from '../../services/uploadFile';
 import { addDoc, collection } from 'firebase/firestore';
 import { useNavigation } from '@react-navigation/native';
@@ -19,15 +19,20 @@ const DocumentUpload = () => {
     const [documentPreview, setDocumentPreview] = useState(null);
 
 
+
     const handleUpload = async () => {
         try {
-            if (!title) {
+            const user = auth.currentUser;
+            if (!user) {
+                return Alert.alert("Login to upload document");
+            } else if (!title) {
                 return Alert.alert("Please enter title");
             } else if (!documentPreview) {
                 return Alert.alert("Please select a document");
             } else if (!description) {
                 return Alert.alert("Please enter description");
             }
+
 
             const response = await uploadFile(documentPreview, "beats");
 
@@ -36,6 +41,8 @@ const DocumentUpload = () => {
                 description,
                 url: response,
                 title: title,
+                uid: user.uid,
+                createdAt: new Date().toISOString(),
             });
 
             setDocumentPreview(null);
