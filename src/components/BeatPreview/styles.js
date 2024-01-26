@@ -3,17 +3,22 @@ import { windowHeight, windowWidth } from '../../utils/Dimentions';
 
 const styles = StyleSheet.create({
     container: {
-
-    },
-    contentContainer: {
         flex: 1,
         backgroundColor: "rgba(0,0,0,0.5)",
         justifyContent: "flex-end",
         alignItems: "center",
     },
-    image: {
+    contentContainer: {
         width: windowWidth,
-        height: windowHeight / 2,
+        height: windowHeight * 0.9,
+        backgroundColor: "white",
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        alignItems: "center",
+    },
+    image: {
+        width: windowWidth * 0.9,
+        height: windowHeight * 0.4,
         resizeMode: "contain",
     },
 });

@@ -31,8 +31,6 @@ const BeatListScreen = ({ navigation }) => {
   const [gamesTab, setGamesTab] = useState(1);
   const [beats, setBeats] = useState([]);
 
-  //using firebase to get data from firestore beats collection and snapshot it
-
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(db, "beats"), (snapshot) => {
       const beats = snapshot.docs.map((doc) => ({

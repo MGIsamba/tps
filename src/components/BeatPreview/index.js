@@ -16,22 +16,17 @@ const BeatPreview = forwardRef((props, ref) => {
         }
     }));
 
-    const handleOnNavigateToUploadDoc = () => {
-        setModalVisible(false);
-        navigation.navigate("DocumentUpload")
-    }
-
     return (
-        <Modal visible={modalVisible}
-            style={styles.container}
+        <Modal
+            visible={modalVisible}
             animationType="fade"
             transparent={true}
             statusBarTranslucent={true}
         >
-            <View style={styles.contentContainer}>
-                <View style={styles.headerContainer}>
+            <View style={styles.container}>
+                <View style={styles.contentContainer}>
                     <Image
-                        source={{ uri: "https://firebasestorage.googleapis.com/v0/b/acoy-1fede.appspot.com/o/beats%2F1783299PYTHON%20PROGRAMMING%20NOTES.pdf?alt=media&token=0cdfa434-1d13-467e-9d19-568a541a7734" }}
+                        source={{ uri: "https://firebasestorage.googleapis.com/v0/b/acoy-1fede.appspot.com/o/beats%2F6361688images.jpeg?alt=media&token=f73aafb4-b3e2-4bba-9958-089d7e1bed10" }}
                         style={styles.image}
                     />
                 </View>
