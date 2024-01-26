@@ -15,29 +15,29 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 import { signOut } from "firebase/auth";
-import { auth } from "../utils/useAuth"
+import { auth } from '../../firebase';
 
 const CustomDrawer = (props) => {
-  const handleSignOut = async() => {
-    try{
+  const handleSignOut = async () => {
+    try {
       await signOut(auth)
       console.log("Logged Out Successfully");
-    }catch(error){
+    } catch (error) {
       console.error(error.message);
     }
   }
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <DrawerContentScrollView
         {...props}
-        contentContainerStyle={{backgroundColor: '#8200d6'}}>
+        contentContainerStyle={{ backgroundColor: '#8200d6' }}>
         <ImageBackground
           source={require('../../assets/images/menu-bg.jpeg')}
-          style={{padding: 20}}>
+          style={{ padding: 20 }}>
           <Image
             source={require('../../assets/trainers/pazzia.jpeg')}
-            style={{height: 80, width: 80, borderRadius: 40, marginBottom: 10}}
+            style={{ height: 80, width: 80, borderRadius: 40, marginBottom: 10 }}
           />
           <Text
             style={{
@@ -48,7 +48,7 @@ const CustomDrawer = (props) => {
             }}>
             ASP Pazzia
           </Text>
-          <View style={{flexDirection: 'row'}}>
+          <View style={{ flexDirection: 'row' }}>
             <Text
               style={{
                 color: '#fff',
@@ -60,13 +60,13 @@ const CustomDrawer = (props) => {
             <FontAwesome5 name="coins" size={14} color="#fff" />
           </View>
         </ImageBackground>
-        <View style={{flex: 1, backgroundColor: '#fff', paddingTop: 10}}>
+        <View style={{ flex: 1, backgroundColor: '#fff', paddingTop: 10 }}>
           <DrawerItemList {...props} />
         </View>
       </DrawerContentScrollView>
-      <View style={{padding: 20, borderTopWidth: 1, borderTopColor: '#ccc'}}>
-        <TouchableOpacity onPress={() => {}} style={{paddingVertical: 15}}>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+      <View style={{ padding: 20, borderTopWidth: 1, borderTopColor: '#ccc' }}>
+        <TouchableOpacity onPress={() => { }} style={{ paddingVertical: 15 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Ionicons name="share-social-outline" size={22} />
             <Text
               style={{
@@ -78,8 +78,8 @@ const CustomDrawer = (props) => {
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={handleSignOut} style={{paddingVertical: 15}}>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <TouchableOpacity onPress={handleSignOut} style={{ paddingVertical: 15 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Ionicons name="exit-outline" size={22} />
             <Text
               style={{

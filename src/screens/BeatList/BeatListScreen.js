@@ -1,4 +1,4 @@
-import React, {useState,  useLayoutEffect} from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import {
   View,
   Text,
@@ -12,21 +12,19 @@ import Feather from 'react-native-vector-icons/Feather';
 import Carousel from 'react-native-snap-carousel';
 import CustomSwitch from '../../components/CustomSwitch/CustomSwitch';
 import BannerSlider from '../../components/Banner/BannerSlider';
-import {windowWidth} from '../../utils/Dimentions';
-import { recruitsEvents,trainerEvents, sliderDataEvent } from '../../data/dataArrays';
+import { windowWidth } from '../../utils/Dimentions';
+import { recruitsEvents, trainerEvents, sliderDataEvent } from '../../data/dataArrays';
 import ListItem from '../../components/ListItem/ListItem';
-import MenuImage from "../../components/MenuImage/MenuImage"; 
-
-  
-
-  const BeatListScreen= ({navigation}) => {
-    
+import MenuImage from "../../components/MenuImage/MenuImage";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import UploadMenu from '../../components/UploadMenu';
 
 
-
+const BeatListScreen = ({ navigation }) => {
+  const uploadMenuRef = React.createRef();
   const [gamesTab, setGamesTab] = useState(1);
 
-  const renderBanner = ({item, index}) => {
+  const renderBanner = ({ item, index }) => {
     return <BannerSlider data={item} />;
   };
 
@@ -44,32 +42,44 @@ import MenuImage from "../../components/MenuImage/MenuImage";
           }}
         />
       ),
-      headerRight: () => <View />,
+      headerRight: () => <TouchableOpacity
+        style={{
+          width: 30,
+          height: 30,
+          marginRight: 10,
+        }}
+        onPress={() => uploadMenuRef?.current?.open()}
+      >
+        <Ionicons name="add" size={30} color="black" />
+      </TouchableOpacity >
     });
   }, []);
-  
+
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}> 
-      <ScrollView style={{padding: 20}}>
-      <View
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+      <UploadMenu
+        ref={uploadMenuRef}
+      />
+      <ScrollView style={{ padding: 20 }}>
+        <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
             marginBottom: 20,
           }}>
-                <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
-                      ASP Pazzia
-                </Text>
+          <Text style={{ fontSize: 18, fontFamily: 'Roboto-Medium' }}>
+            ASP Pazzia
+          </Text>
           <ImageBackground
-              source={require('../../../assets/trainers/pazzia.jpeg')}
-              style={{width: 35, height: 35}}
-              imageStyle={{borderRadius: 25}}
-            />
-      </View>
+            source={require('../../../assets/trainers/pazzia.jpeg')}
+            style={{ width: 35, height: 35 }}
+            imageStyle={{ borderRadius: 25 }}
+          />
+        </View>
 
 
-      <View
+        <View
           style={{
             flexDirection: 'row',
             borderColor: '#C6C6C6',
@@ -82,7 +92,7 @@ import MenuImage from "../../components/MenuImage/MenuImage";
             name="search"
             size={20}
             color="#C6C6C6"
-            style={{marginRight: 5}}
+            style={{ marginRight: 5 }}
           />
           <TextInput placeholder="Search" />
         </View>
@@ -93,18 +103,18 @@ import MenuImage from "../../components/MenuImage/MenuImage";
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          <Text style={{fontSize: 14, fontFamily: 'Roboto-Medium'}}>
-            Events on Beats,Patrol & Trainers Duties. 
+          <Text style={{ fontSize: 14, fontFamily: 'Roboto-Medium' }}>
+            Events on Beats,Patrol & Trainers Duties.
           </Text>
-          <TouchableOpacity onPress={() => {}}>
-            <Text style={{color: '#0aada8'}}>See all</Text>
+          <TouchableOpacity onPress={() => { }}>
+            <Text style={{ color: '#0aada8' }}>See all</Text>
           </TouchableOpacity>
         </View>
 
 
-        <Carousel  
-        
-        ref={c => {
+        <Carousel
+
+          ref={c => {
             this._carousel = c;
           }}
           data={sliderDataEvent}
@@ -114,7 +124,7 @@ import MenuImage from "../../components/MenuImage/MenuImage";
           loop={true}
         />
 
-<View style={{marginVertical: 20}}>
+        <View style={{ marginVertical: 20 }}>
           <CustomSwitch
             selectionMode={1}
             option1="Recruits Beats & Patrols"
@@ -154,10 +164,10 @@ import MenuImage from "../../components/MenuImage/MenuImage";
                   id: item.id,
                 })
               }
-       
-              />
+
+            />
           ))}
-        
+
 
       </ScrollView>
     </SafeAreaView>

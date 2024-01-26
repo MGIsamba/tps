@@ -17,6 +17,7 @@ const UploadMenu = forwardRef((props, ref) => {
     }));
 
     const handleOnNavigateToUploadDoc = () => {
+        setModalVisible(false);
         navigation.navigate("DocumentUpload")
     }
 

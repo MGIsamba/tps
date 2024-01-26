@@ -32,6 +32,7 @@ import AboutUsScreen from "../screens/AboutUs/AboutUsScreen";
 import BeatListScreen from "../screens/BeatList/BeatListScreen";
 import LoginScreen from "../screens/Login/LoginScreen";
 import RegisterScreen from "../screens/Register/RegisterScreen";
+import DocumentUpload from "../screens/DocumentUpload";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -85,7 +86,24 @@ function MainNavigator() {
   );
 }
 
+const BeatStack = () => {
+
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Beat" component={BeatScreenList} />
+      <Stack.Screen name="DocumentUpload" component={DocumentUpload} options={{
+        headerTitle: "Upload Document",
+        headerTitleStyle: {
+          marginLeft: 50
+        }
+      }} />
+    </Stack.Navigator>
+  )
+}
+
+
 const Drawer = createDrawerNavigator();
+
 
 function DrawerStack() {
   return (
@@ -154,8 +172,9 @@ function DrawerStack() {
       />
       <Drawer.Screen
         name="Beat"
-        component={BeatListScreen}
+        component={BeatStack}
         options={{
+          headerShown: false,
           drawerIcon: ({ color }) => (
             <Ionicons name="person-outline" size={22} color={color} />
           ),

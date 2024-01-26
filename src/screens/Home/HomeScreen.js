@@ -7,6 +7,7 @@ import {
   FlatList,
   SafeAreaView,
   Alert,
+  TouchableOpacity,
 } from "react-native";
 import styles from "./styles";
 import MenuImage from "../../components/MenuImage/MenuImage";
@@ -83,7 +84,7 @@ const HomeScreen = ({ navigation }) => {
           }}
         />
       ),
-      headerRight: () => <View />,
+      headerRight: () => <View />
     });
   }, []);
 

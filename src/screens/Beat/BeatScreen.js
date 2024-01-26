@@ -33,7 +33,7 @@ export default function BeatScreen(props) {
             value={value}
           />
           <Pressable onPress={() => handleSearch("")}>
-          <Image style={styles.searchIcon} source={require("../../../assets/icons/close.png")} />
+            <Image style={styles.searchIcon} source={require("../../../assets/icons/close.png")} />
           </Pressable>
         </View>
       ),
@@ -41,7 +41,7 @@ export default function BeatScreen(props) {
     });
   }, [value]);
 
-  useEffect(() => {}, [value]);
+  useEffect(() => { }, [value]);
 
   const handleSearch = (text) => {
     setValue(text);
@@ -67,7 +67,7 @@ export default function BeatScreen(props) {
   const renderCategory = ({ item }) => (
     <TouchableHighlight underlayColor="rgba(73,182,77,0.9)" onPress={() => onPressCategory(item)}>
       <View style={styles.categoriesItemContainer}>
-        <Image style={styles.categoriesPhoto} source={item.photo_url }  />
+        <Image style={styles.categoriesPhoto} source={item.photo_url} />
         <Text style={styles.categoriesName}>{item.name}</Text>
         <Text style={styles.categoriesInfo}>{getNumberOfRecipes(item.id)}DATE</Text>
       </View>
@@ -80,7 +80,7 @@ export default function BeatScreen(props) {
     </View>
   );
 
-  
+
 
 
 
