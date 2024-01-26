@@ -13,6 +13,7 @@ import Ionicon from 'react-native-vector-icons/Ionicons';
 
 const DocumentUpload = () => {
     const navgation = useNavigation();
+    const [title, setTitle] = useState('');
     const [documentType, setDocumentType] = useState('pdf');
     const [description, setDescription] = useState('');
     const [documentPreview, setDocumentPreview] = useState(null);
@@ -20,7 +21,9 @@ const DocumentUpload = () => {
 
     const handleUpload = async () => {
         try {
-            if (!documentPreview) {
+            if (!title) {
+                return Alert.alert("Please enter title");
+            } else if (!documentPreview) {
                 return Alert.alert("Please select a document");
             } else if (!description) {
                 return Alert.alert("Please enter description");
@@ -28,15 +31,17 @@ const DocumentUpload = () => {
 
             const response = await uploadFile(documentPreview, "beats");
 
-            const docRef = await addDoc(collection(db, "beats"), {
+            await addDoc(collection(db, "beats"), {
                 type: documentType,
                 description,
                 url: response,
+                title: title,
             });
 
             setDocumentPreview(null);
             setDocumentType('');
             setDescription('');
+            setTitle('');
 
             Alert.alert("Document uploaded successfully");
             navgation.navigate("Beat");
@@ -70,6 +75,14 @@ const DocumentUpload = () => {
 
     return (
         <View style={styles.container}>
+            <View style={styles.sectionContainer}>
+                <Text style={styles.titleText}>Title</Text>
+                <TextInput
+                    style={styles.titleInput}
+                    value={title}
+                    onChangeText={setTitle}
+                />
+            </View>
             <View style={styles.sectionContainer}>
                 <Text style={styles.titleText}>Document Type:</Text>
                 <View style={styles.rowContainer}>

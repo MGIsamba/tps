@@ -11,6 +11,19 @@ const styles = StyleSheet.create({
         width: windowWidth - 40,
         marginVertical: 10
     },
+    titleText: {
+        fontSize: 16,
+        fontWeight: "bold",
+    },
+    titleInput: {
+        width: windowWidth - 60,
+        height: 50,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: "#000000",
+        padding: 10,
+        marginTop: 10
+    },
     rowContainer: {
         width: windowWidth * 0.9,
         flexDirection: "row",

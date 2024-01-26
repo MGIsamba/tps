@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import {
   View,
   Text,
@@ -18,11 +18,31 @@ import ListItem from '../../components/ListItem/ListItem';
 import MenuImage from "../../components/MenuImage/MenuImage";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import UploadMenu from '../../components/UploadMenu';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { db } from '../../../firebase';
+import pdfIcon from '../../../assets/pdf.png';
+import BeatPreview from '../../components/BeatPreview';
 
 
 const BeatListScreen = ({ navigation }) => {
   const uploadMenuRef = React.createRef();
+  const beatPreviewRef = React.createRef();
+
   const [gamesTab, setGamesTab] = useState(1);
+  const [beats, setBeats] = useState([]);
+
+  //using firebase to get data from firestore beats collection and snapshot it
+
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, "beats"), (snapshot) => {
+      const beats = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setBeats(beats);
+    });
+    return unsubscribe;
+  }, []);
 
   const renderBanner = ({ item, index }) => {
     return <BannerSlider data={item} />;
@@ -55,12 +75,12 @@ const BeatListScreen = ({ navigation }) => {
     });
   }, []);
 
-
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
       <UploadMenu
         ref={uploadMenuRef}
       />
+      <BeatPreview ref={beatPreviewRef} />
       <ScrollView style={{ padding: 20 }}>
         <View
           style={{
@@ -113,7 +133,6 @@ const BeatListScreen = ({ navigation }) => {
 
 
         <Carousel
-
           ref={c => {
             this._carousel = c;
           }}
@@ -134,19 +153,15 @@ const BeatListScreen = ({ navigation }) => {
         </View>
 
         {gamesTab == 1 &&
-          recruitsEvents.map(item => (
+          beats.map(item => (
             <ListItem
               key={item.id}
-              photo={item.poster}
+              photo={item?.type === "pdf" ? pdfIcon : { uri: item?.url }}
               title={item.title}
-              subTitle={item.subtitle}
-              isFree={item.isFree}
-              onPress={() =>
-                navigation.navigate('Beat', {
-                  title: item.title,
-                  id: item.id,
-                })
-              }
+              // subTitle={item.subtitle}
+              // isFree={item.isFree}
+              isFree={"Yes"}
+              onPress={() => beatPreviewRef?.current?.open()}
             />
           ))}
         {gamesTab == 2 &&
@@ -164,11 +179,8 @@ const BeatListScreen = ({ navigation }) => {
                   id: item.id,
                 })
               }
-
             />
           ))}
-
-
       </ScrollView>
     </SafeAreaView>
 
