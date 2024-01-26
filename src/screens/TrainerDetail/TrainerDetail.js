@@ -25,8 +25,8 @@ export default function TrainerDetailScreen(props) {
   const { navigation, route } = props;
 
   const item = route.params?.item;
-  const trainer = getTrainersById(item.trainerId);
-  const name = getTrainersName(trainer.id);
+  const trainer = getTrainersById(item?.trainerId);
+  const name = getTrainersName(trainer?.id);
 
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -59,7 +59,7 @@ export default function TrainerDetailScreen(props) {
         <View style={styles.carousel}>
           <Carousel
             ref={slider1Ref}
-            data={item.photosArray}
+            data={item?.photosArray}
             renderItem={renderImage}
             sliderWidth={viewportWidth}
             itemWidth={viewportWidth}
@@ -73,7 +73,7 @@ export default function TrainerDetailScreen(props) {
             onSnapToItem={(index) => setActiveSlide(0)}
           />
           <Pagination
-            dotsLength={item.photosArray.length}
+            dotsLength={item?.photosArray.length}
             activeDotIndex={activeSlide}
             containerStyle={styles.paginationContainer}
             dotColor="rgba(255, 255, 255, 0.92)"
@@ -87,7 +87,7 @@ export default function TrainerDetailScreen(props) {
         </View>
       </View>
       <View style={styles.infoRecipeContainer}>
-        <Text style={styles.infoRecipeName}>{item.title}</Text>
+        <Text style={styles.infoRecipeName}>{item?.title}</Text>
         <View style={styles.infoContainer}>
           <TouchableHighlight
             onPress={() =>
@@ -95,7 +95,7 @@ export default function TrainerDetailScreen(props) {
             }
           >
             <Text style={styles.category}>
-              {getTrainersName(item.trainerId).toUpperCase()}
+              {getTrainersName(item?.trainerId)?.toUpperCase()}
             </Text>
           </TouchableHighlight>
         </View>
@@ -105,20 +105,20 @@ export default function TrainerDetailScreen(props) {
             style={styles.infoPhoto}
             source={require("../../../assets/icons/time.png")}
           />
-          <Text style={styles.infoRecipe}>{item.time} minutes </Text>
+          <Text style={styles.infoRecipe}>{item?.time} minutes </Text>
         </View>
 
         <View style={styles.infoContainer}>
           <ViewIngredientsButton
             onPress={() => {
-              let ingredients = item.ingredients;
-              let title = "Ingredients for " + item.title;
+              let ingredients = item?.ingredients;
+              let title = "Ingredients for " + item?.title;
               navigation.navigate("IngredientsDetails", { ingredients, title });
             }}
           />
         </View>
         <View style={styles.infoContainer}>
-          <Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
+          <Text style={styles.infoDescriptionRecipe}>{item?.description}</Text>
         </View>
       </View>
     </ScrollView>

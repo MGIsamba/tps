@@ -9,6 +9,8 @@ import {
   ActivityIndicator,
 } from "react-native";
 
+import { uid } from "uid";
+
 import {
   InputField,
   InputWrapper,
@@ -79,7 +81,14 @@ const AddPostScreen = () => {
         likes: null,
         comments: null,
       })
-      .then(() => {
+      .then((docRef) => {
+        if (docRef.id) {
+          firebase
+            .firestore()
+            .collection("posts")
+            .doc(docRef.id)
+            .update({ id: docRef.id });
+        }
         console.log("Post Added!");
         Alert.alert(
           "Post published!",
@@ -108,7 +117,7 @@ const AddPostScreen = () => {
       xhr.open("GET", image, true);
       xhr.send(null);
     });
-    const ref = firebase.storage().ref().child(`Pictures/Image1`);
+    const ref = firebase.storage().ref().child(`Pictures/${uid()}`);
     const snapshot = ref.put(blob);
     snapshot.on(
       firebase.storage.TaskEvent.STATE_CHANGED,

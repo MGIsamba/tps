@@ -57,7 +57,7 @@ const ProfileScreen = ({navigation, route}) => {
 
         <View style={styles.userInfoWrapper}>
           <View style={styles.userInfoItem}>
-            <Text style={styles.userInfoTitle}>{posts.length}</Text>
+            <Text style={styles.userInfoTitle}>{1}</Text>
             <Text style={styles.userInfoSubTitle}>Posts</Text>
           </View>
           <View style={styles.userInfoItem}>
@@ -70,9 +70,9 @@ const ProfileScreen = ({navigation, route}) => {
           </View>
         </View>
 
-        {posts.map((item) => (
+        {/* {posts?.map((item) => (
           <PostCard key={item.id} item={item} onDelete={handleDelete} />
-        ))}
+        ))} */}
       </ScrollView>
     </SafeAreaView>
   );

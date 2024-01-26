@@ -17,8 +17,11 @@ import {
   InteractionText,
   Divider,
 } from "../../styles/FeedStyles";
+import { firebase } from "../../../firebase";
 
 import ProgressiveImage from "./ProgressiveImage";
+import CommentsModal from "../CommentsModal";
+import { Alert } from "react-native";
 
 //import {AuthContext} from '../navigation/AuthProvider';
 
@@ -30,6 +33,9 @@ const PostCard = ({ item }) => {
   likeIcon = item.liked ? "heart" : "heart-outline";
   likeIconColor = item.liked ? "#2e64e5" : "#333";
 
+  const [liked, setLiked] = useState(item.liked);
+  const [modalVisible, setModalVisible] = useState(false);
+
   if (item.likes == 1) {
     likeText = "1 Like";
   } else if (item.likes > 1) {
@@ -38,15 +44,27 @@ const PostCard = ({ item }) => {
     likeText = "Like";
   }
 
-  if (item.comments == 1) {
+  if (item.comments?.length === 1) {
     commentText = "1 Comment";
-  } else if (item.comments > 1) {
-    commentText = item.comments + " Comments";
+  } else if (item.comments?.length > 1) {
+    commentText = item.comments?.length + " Comments";
   } else {
     commentText = "Comment";
   }
 
-  console.log("dataaa",item.postTime);
+  const onLike = async () => {
+    await firebase.firestore().collection("posts").doc(item.id).update({
+      liked: !item.liked,
+    });
+    setLiked(!item.liked);
+  };
+
+  const setModal = ()=> {
+    Alert.alert("pppppp")
+    console.log("pppppp")
+  }
+
+  console.log("dataaa", item.postTime);
   return (
     <Card>
       <UserInfo>
@@ -57,18 +75,28 @@ const PostCard = ({ item }) => {
         </UserInfoText>
       </UserInfo>
       <PostText>{item.post}</PostText>
-      {item.postImg != "none" ? <PostImg source={{uri:item.postImg}} /> : <Divider />}
+      {item.postImg != "none" ? (
+        <PostImg source={{ uri: item.postImg }} />
+      ) : (
+        <Divider />
+      )}
 
       <InteractionWrapper>
-        <Interaction active={item.liked}>
+        <Interaction active={liked} onPress={onLike}>
           <Ionicons name={likeIcon} size={25} color={likeIconColor} />
           <InteractionText active={item.liked}>{likeText}</InteractionText>
         </Interaction>
-        <Interaction>
+        <Interaction onPress={() => setModalVisible(true)}>
           <Ionicons name="md-chatbubble-outline" size={25} />
           <InteractionText>{commentText}</InteractionText>
         </Interaction>
       </InteractionWrapper>
+      {modalVisible? (
+        <CommentsModal
+          setModalVisible={setModalVisible}
+          post={item}
+        />
+      ):null}
     </Card>
   );
 };

@@ -25,7 +25,7 @@ export default function AboutUsScreen(props) {
   const { navigation, route } = props;
 
   const item = route.params?.item;
-  const trainer = getTrainersById(item.trainerId);
+  const trainer = getTrainersById(item?.trainerId);
   const name = getTrainersName(trainer.id);
 
   const [activeSlide, setActiveSlide] = useState(0);

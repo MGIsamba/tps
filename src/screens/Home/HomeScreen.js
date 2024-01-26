@@ -7,18 +7,23 @@ import {
   FlatList,
   SafeAreaView,
   Alert,
+  ActivityIndicator,
+  TouchableOpacity,
 } from "react-native";
 import styles from "./styles";
 import MenuImage from "../../components/MenuImage/MenuImage";
 //import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
-import Ionicons from "react-native-vector-icons/Ionicons";
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import PostCard from "../../components/Post/PostCard";
 import { Container } from "../../styles/FeedStyles";
 
 import { firebase } from "../../../firebase";
+import CommentsModal from "../../components/CommentsModal";
 
 const HomeScreen = ({ navigation }) => {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const Posts = [
     {
@@ -96,18 +101,24 @@ const HomeScreen = ({ navigation }) => {
   }, []);
 
   const getPosts = async () => {
-    const postsData = [];
-     firebase
+    setLoading(true);
+    firebase
       .firestore()
       .collection("posts")
       .onSnapshot((posts) => {
+        const postsData = [];
         posts.forEach((post) => {
           // doc.data() is never undefined for query doc snapshots
           postsData.push(post.data());
         });
         setPosts(postsData);
+        setLoading(false);
       });
   };
+
+  if (loading) {
+    return <ActivityIndicator style={{ marginTop: 50 }} size={50} />;
+  }
 
   return (
     <Container>
@@ -117,6 +128,20 @@ const HomeScreen = ({ navigation }) => {
         // keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
       />
+      <View style={styles.bottomNav}>
+        <TouchableOpacity onPress={()=> navigation.navigate("TPS Online")} style={styles.item}>
+            <Ionicons name="home-outline" size={20} />
+          <Text style={styles.text}>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate("Message")} style={styles.item}>
+          <FontAwesome5 size={20} name="comment"/>
+          <Text style={styles.text}>Messages</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate("Profile")} style={styles.item}>
+          <FontAwesome5 size={20} name="user"/>
+          <Text style={styles.text}>Profile</Text>
+        </TouchableOpacity>
+      </View>
     </Container>
   );
 };

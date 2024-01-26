@@ -14,7 +14,7 @@
     "@react-navigation/drawer": "^6.5.0",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.2",
-    "eas-cli": "^5.9.3",
+    "eas-cli": "^0.60.0",
     "expo": "~48.0.18",
     "expo-image-picker": "~14.1.1",
     "expo-status-bar": "~1.4.4",
@@ -31,7 +31,8 @@
     "react-native-screens": "~3.20.0",
     "react-native-snap-carousel": "github:ram33z/react-native-snap-carousel",
     "react-navigation-stack": "^2.10.4",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "uid": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
