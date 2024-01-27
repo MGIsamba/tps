@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -18,7 +19,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import CustomButton from "../../components/CustomButton";
 import InputField from "../../components/InputField";
 
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../../../firebase";
 
 const LoginScreen = ({ navigation }) => {
@@ -40,6 +41,22 @@ const LoginScreen = ({ navigation }) => {
       console.log("Login successful");
     } catch (error) {
       setError("Invalid email or password. Please try again.");
+      console.error(error.message);
+    }
+  };
+
+  const handleForgotPassword = async () => {
+    try {
+      if (!email) {
+        setError('Please enter your email to reset the password.');
+        return;
+      }
+
+      await sendPasswordResetEmail(auth, email);
+      setError(null); // Clear any existing error
+      Alert.alert('Password Reset Email Sent', 'Check your email for further instructions.');
+    } catch (error) {
+      setError('Failed to send password reset email. Please check your email and try again.');
       console.error(error.message);
     }
   };
@@ -99,7 +116,7 @@ const LoginScreen = ({ navigation }) => {
           }
           inputType="password"
           fieldButtonLabel={"Forgot?"}
-          fieldButtonFunction={() => {}}
+          fieldButtonFunction={handleForgotPassword}
           onChangeText={setPassword}
         />
         <CustomButton label={"Login"} onPress={handleLogin} />

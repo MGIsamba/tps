@@ -34,13 +34,26 @@ const  RegisterScreen = ({navigation}) => {
   const [dobLabel, setDobLabel] = useState('Date of Birth');
 
   const handleRegister = async() => {
-    try{
+    try {
+      // Check for valid inputs
+      if (!name || !email || !password || !confirmPassword) {
+        setError('Please fill in all fields.');
+        return;
+      }
+
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        setError('Passwords do not match. Please check and try again.');
+        return;
+      }
+
+      // Register the user
       await createUserWithEmailAndPassword(auth, email, name, password);
       navigation.navigate('Login');
       Alert.alert('Registered Successfully');
-    }catch(error){
+    } catch (error) {
+      setError('Registration failed. Please try again.');
       console.error(error.message);
-      console.log(email);
     }
   }
 
