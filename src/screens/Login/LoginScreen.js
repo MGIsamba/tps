@@ -10,7 +10,7 @@ import {
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import LoginSVG from '../../../assets/images/misc/login.svg';
+// import LoginSVG from '../../../assets/images/misc/login.svg';
 // import GoogleSVG from '../../../assets/images/misc/google.svg';
 // import FacebookSVG from '../../../assets/images/misc/facebook.svg';
 // import TwitterSVG from '../../../assets/images/misc/twitter.svg';
@@ -36,10 +36,6 @@ const LoginScreen = ({ navigation }) => {
       console.error(error.message);
     }
   };
-
-  const signInWithGoogle = () => {
-    
-  }
 
   return (
     <SafeAreaView style={{ flex: 1, justifyContent: 'center' }}>
@@ -152,7 +148,7 @@ const LoginScreen = ({ navigation }) => {
           }}
         >
           <Text>New to the app?</Text>
-          <TouchableOpacity onPress={() => navigation.replace('Register')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Register')}>
             <Text style={{ color: '#AD40AF', fontWeight: '700' }}>
               {' '}
               Register

@@ -6,6 +6,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 
 // import DatePicker from 'react-native-date-picker';
@@ -35,8 +36,8 @@ const  RegisterScreen = ({navigation}) => {
   const handleRegister = async() => {
     try{
       await createUserWithEmailAndPassword(auth, email, name, password);
-      console.log('Registered Successfully');
       navigation.navigate('Login');
+      Alert.alert('Registered Successfully');
     }catch(error){
       console.error(error.message);
       console.log(email);
