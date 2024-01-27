@@ -103,7 +103,6 @@ const LoginScreen = ({ navigation }) => {
           onChangeText={setPassword}
         />
         <CustomButton label={"Login"} onPress={handleLogin} />
-        <Text>{password}</Text>
         <Text style={{ textAlign: "center", color: "#666", marginBottom: 30 }}>
           Or, login with ...
         </Text>
