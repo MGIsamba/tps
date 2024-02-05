@@ -11,6 +11,7 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import HomeScreen from "../screens/Home/HomeScreen";
 import AddPostScreen from "../screens/Post/AddPostScreen";
 import ProfileScreen from "../screens/Profile/ProfileScreen";
+import EditProfileScreen from "../screens/EditProfile/EditProfileScreen";
 import CategoriesScreen from "../screens/Categories/CategoriesScreen";
 import PlatoonScreen from "../screens/Platoons/PlatoonScreen";
 import MessagesScreen from "../screens/Messages/MessagesScreen";
@@ -37,7 +38,6 @@ import TimeTableUpload from "../screens/TimeTableUpload";
 import NewsUpload from "../screens/NewsUpload";
 
 import { View } from "react-native";
-import EditProfileScreen from "../screens/EditProfile/EditProfileScreen";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -145,6 +145,16 @@ const BeatStack = () => {
   );
 };
 
+const HomeStack = () =>{
+  return (
+  <Stack.Navigator>
+    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="Message" component={MessagesScreen}/>
+    <Stack.Screen name="Profile" component={ProfileScreen}/>
+    <Stack.Screen name="Edit" component={EditProfileScreen}/>
+  </Stack.Navigator>
+  )}
+
 const Drawer = createDrawerNavigator();
 
 function DrawerStack() {
@@ -166,7 +176,7 @@ function DrawerStack() {
     >
       <Drawer.Screen
         name="TPS Online"
-        component={HomeScreen}
+        component={HomeStack}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name="home-outline" size={22} color={color} />

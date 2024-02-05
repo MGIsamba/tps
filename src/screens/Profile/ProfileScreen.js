@@ -13,8 +13,6 @@ import { db, auth } from '../../../firebase';
 import { getDoc, doc } from 'firebase/firestore';
 import CustomButton from '../../components/CustomButton';
 
-
-
 const ProfileScreen = ({navigation, route}) => {
   const [userDetails, setUserDetails] = useState(null);
   
@@ -99,8 +97,9 @@ const ProfileScreen = ({navigation, route}) => {
          {userDetails && (
           <>
             <Text style={styles.userName}>{userDetails.fullName}</Text>
-            <Text style={styles.userName}>{userDetails.email}</Text>
-            <CustomButton label={'Edit Profile'} onPress={() => {navigation.navigate('EditProfile')}}/>
+            <Text style={styles.userName}>{userDetails.email} | {userDetails.phone}</Text>
+            <Text style={styles.userName}>{userDetails.about}</Text>
+            <CustomButton label={'Edit Profile'} onPress={() => {navigation.navigate('Edit')}}/>
           </>
         )}
       </ScrollView>
