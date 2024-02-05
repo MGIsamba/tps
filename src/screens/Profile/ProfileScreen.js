@@ -9,10 +9,33 @@ import {
   SafeAreaView,
 } from 'react-native';
 
+import { db, auth } from '../../../firebase';
+import { getDoc, doc } from 'firebase/firestore';
+import CustomButton from '../../components/CustomButton';
+
+
 
 const ProfileScreen = ({navigation, route}) => {
+  const [userDetails, setUserDetails] = useState(null);
   
-  
+  useEffect(() => {
+    const userId = route.params ? route.params.userId : auth.currentUser.uid;
+
+    const fetchUserData = async() => {
+      const userDocRef = doc(db, 'users', userId);
+
+      try{
+        const userDocSnapshot = await getDoc(userDocRef);
+        if(userDocSnapshot.exists()){
+          const userData = userDocSnapshot.data();
+          setUserDetails(userData)
+        }
+      }catch(error){
+        console.error('Error fetching user data: ', error);
+      }
+    }
+    fetchUserData()
+  }, [route.params])
      
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
@@ -20,17 +43,17 @@ const ProfileScreen = ({navigation, route}) => {
         style={styles.container}
         contentContainerStyle={{justifyContent: 'center', alignItems: 'center'}}
         showsVerticalScrollIndicator={false}>
-        <Image
+        {/* <Image
           style={styles.userImg}
-          //source={{uri: userData ? userData.userImg || 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg' : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'}}
-        />
+          source={{uri: userData ? userData.userImg || 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg' : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'}}
+        /> */}
       
-        {/* <Text>{route.params ? route.params.userId : user.uid}</Text> */}
+        {/* <Text>{userDetails ? userDetails.userId : user.uid}</Text>
         <Text style={styles.aboutUser}>
      
-        </Text>
-        <View style={styles.userBtnWrapper}>
-          {route.params ? (
+        </Text> */}
+        {/* <View style={styles.userBtnWrapper}>
+          {userDetails ? (
             <>
               <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
                 <Text style={styles.userBtnTxt}>Message</Text>
@@ -53,9 +76,9 @@ const ProfileScreen = ({navigation, route}) => {
               </TouchableOpacity>
             </>
           )}
-        </View>
+        </View> */}
 
-        <View style={styles.userInfoWrapper}>
+        {/* <View style={styles.userInfoWrapper}>
           <View style={styles.userInfoItem}>
             <Text style={styles.userInfoTitle}>{posts.length}</Text>
             <Text style={styles.userInfoSubTitle}>Posts</Text>
@@ -68,11 +91,18 @@ const ProfileScreen = ({navigation, route}) => {
             <Text style={styles.userInfoTitle}>100</Text>
             <Text style={styles.userInfoSubTitle}>Following</Text>
           </View>
-        </View>
+        </View> */}
 
-        {posts.map((item) => (
+        {/* {posts.map((item) => (
           <PostCard key={item.id} item={item} onDelete={handleDelete} />
-        ))}
+        ))} */}
+         {userDetails && (
+          <>
+            <Text style={styles.userName}>{userDetails.fullName}</Text>
+            <Text style={styles.userName}>{userDetails.email}</Text>
+            <CustomButton label={'Edit Profile'} onPress={() => {navigation.navigate('EditProfile')}}/>
+          </>
+        )}
       </ScrollView>
     </SafeAreaView>
   );

@@ -21,14 +21,16 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 // import FacebookSVG from '../assets/images/misc/facebook.svg';
 // import TwitterSVG from '../assets/images/misc/twitter.svg';
 import CustomButton from '../../components/CustomButton';
-import { auth } from '../../../firebase';
+import { auth, db } from '../../../firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { addDoc, collection, doc, setDoc } from 'firebase/firestore';
 
 const  RegisterScreen = ({navigation}) => {
   const [name, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('')
   const [date, setDate] = useState(new Date());
   const [open, setOpen] = useState(false);
   const [dobLabel, setDobLabel] = useState('Date of Birth');
@@ -48,7 +50,26 @@ const  RegisterScreen = ({navigation}) => {
       }
 
       // Register the user
-      await createUserWithEmailAndPassword(auth, email, name, password);
+      const userCredentials = await createUserWithEmailAndPassword(auth, email, name, password);
+      const user = userCredentials.user;
+
+      //Fetch User UID
+      const userUid = user.uid;
+
+      const userDocRef = doc(collection(db, 'users'), userUid);
+      await setDoc(userDocRef, {
+        fullName: name,
+        email: email
+      })
+
+      // const newUser = await addDoc(collection(db, 'users'), {
+      //   fullName: name,
+      //   email: email
+      // })
+      // console.log(newUser);
+
+      console.log('User succcessfully created');
+
       navigation.navigate('Login');
       Alert.alert('Registered Successfully');
     } catch (error) {

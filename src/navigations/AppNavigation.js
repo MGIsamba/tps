@@ -33,10 +33,11 @@ import BeatListScreen from "../screens/BeatList/BeatListScreen";
 
 import OrdersUpload from "../screens/OrdersUpload";
 import DocumentUpload from "../screens/DocumentUpload";
-import TimeTableUpload from "../screens/TimeTableUpload"
-import NewsUpload from "../screens/NewsUpload"
+import TimeTableUpload from "../screens/TimeTableUpload";
+import NewsUpload from "../screens/NewsUpload";
 
 import { View } from "react-native";
+import EditProfileScreen from "../screens/EditProfile/EditProfileScreen";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -54,79 +55,97 @@ function MainNavigator() {
         },
       }}
     >
-      
-          <Stack.Screen name=" " component={DrawerStack}/>
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Tab" component={TabScreen} />
-          <Stack.Screen name="AddPost" component={AddPostScreen} />
-          <Stack.Screen name="Profile" component={ProfileScreen} />
-          <Stack.Screen name="Categories" component={CategoriesScreen} />
-          <Stack.Screen name="Platoon" component={PlatoonScreen} />
-          <Stack.Screen name="Message" component={MessagesScreen} />
-          <Stack.Screen name="Trainers" component={TrainersScreen} />
-          <Stack.Screen name="TrainersList" component={TrainersListScreen} />
-          <Stack.Screen name="TrainerDetail" component={TrainerDetailScreen} />
-          <Stack.Screen name="Beat" component={BeatScreen} />
-          <Stack.Screen name="BeatList" component={BeatScreenList} />
-          <Stack.Screen name="Recipe" component={RecipesScreen} />
-          <Stack.Screen name="RecipesList" component={RecipesListScreen} />
-          <Stack.Screen name="NewsList" component={NewsListScreen} />
-          <Stack.Screen name="Ingredient" component={IngredientScreen} />
-          <Stack.Screen name="AboutUs" component={AboutUsScreen} />
-          <Stack.Screen name="Splash" component={SplashScreen} />
-          <Stack.Screen name="Search" component={SearchScreen} />
-          <Stack.Screen
-            name="IngredientsDetails"
-            component={IngredientsDetailsScreen}
-          />
-     
-     
+      <Stack.Screen name=" " component={DrawerStack} />
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Tab" component={TabScreen} />
+      <Stack.Screen name="AddPost" component={AddPostScreen} />
+      <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen name="EditProfile" component={EditProfileScreen} />
+      <Stack.Screen name="Categories" component={CategoriesScreen} />
+      <Stack.Screen name="Platoon" component={PlatoonScreen} />
+      <Stack.Screen name="Message" component={MessagesScreen} />
+      <Stack.Screen name="Trainers" component={TrainersScreen} />
+      <Stack.Screen name="TrainersList" component={TrainersListScreen} />
+      <Stack.Screen name="TrainerDetail" component={TrainerDetailScreen} />
+      <Stack.Screen name="Beat" component={BeatScreen} />
+      <Stack.Screen name="BeatList" component={BeatScreenList} />
+      <Stack.Screen name="Recipe" component={RecipesScreen} />
+      <Stack.Screen name="RecipesList" component={RecipesListScreen} />
+      <Stack.Screen name="NewsList" component={NewsListScreen} />
+      <Stack.Screen name="Ingredient" component={IngredientScreen} />
+      <Stack.Screen name="AboutUs" component={AboutUsScreen} />
+      <Stack.Screen name="Splash" component={SplashScreen} />
+      <Stack.Screen name="Search" component={SearchScreen} />
+      <Stack.Screen
+        name="IngredientsDetails"
+        component={IngredientsDetailsScreen}
+      />
     </Stack.Navigator>
   );
 }
 
 const BeatStack = () => {
-
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Beat and Trainer Time Table" component={BeatScreenList} />
-      <Stack.Screen name="Newslist" component={NewsListScreen} options={{
-        headerTitle: "TPS News & Events",
-        headerTitleStyle: {
-          marginLeft: 50
-        }
-      }} />
-       <Stack.Screen name="OrdersUpload" component={OrdersUpload} options={{
-        headerTitle: "Orders & Instructions",
-        headerTitleStyle: {
-          marginLeft: 50
-        }
-      }} />
-      <Stack.Screen name="DocumentUpload" component={DocumentUpload} options={{
-        headerTitle: "Upload Document",
-        headerTitleStyle: {
-          marginLeft: 50
-        }
-      }} />
-      <Stack.Screen name="TimeTableUpload" component={TimeTableUpload} options={{
-        headerTitle: "TimeTableUpload",
-        headerTitleStyle: {
-          marginLeft: 50
-        }
-      }} />
-      <Stack.Screen name="NewsUpload" component={NewsUpload} options={{
-        headerTitle: "NewsUpload",
-        headerTitleStyle: {
-          marginLeft: 50
-        }
-      }} />
+      <Stack.Screen
+        name="Beat and Trainer Time Table"
+        component={BeatScreenList}
+      />
+      <Stack.Screen
+        name="Newslist"
+        component={NewsListScreen}
+        options={{
+          headerTitle: "TPS News & Events",
+          headerTitleStyle: {
+            marginLeft: 50,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="OrdersUpload"
+        component={OrdersUpload}
+        options={{
+          headerTitle: "Orders & Instructions",
+          headerTitleStyle: {
+            marginLeft: 50,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="DocumentUpload"
+        component={DocumentUpload}
+        options={{
+          headerTitle: "Upload Document",
+          headerTitleStyle: {
+            marginLeft: 50,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="TimeTableUpload"
+        component={TimeTableUpload}
+        options={{
+          headerTitle: "TimeTableUpload",
+          headerTitleStyle: {
+            marginLeft: 50,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="NewsUpload"
+        component={NewsUpload}
+        options={{
+          headerTitle: "NewsUpload",
+          headerTitleStyle: {
+            marginLeft: 50,
+          },
+        }}
+      />
     </Stack.Navigator>
-  )
-}
-
+  );
+};
 
 const Drawer = createDrawerNavigator();
-
 
 function DrawerStack() {
   return (
@@ -155,7 +174,16 @@ function DrawerStack() {
         }}
       />
 
-     
+      <Drawer.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{
+          drawerIcon: ({ color }) => (
+            <Ionicons name="home-outline" size={22} color={color} />
+          ),
+        }}
+      />
+
       <Drawer.Screen
         name="Trainer"
         component={TrainersScreen}

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "acompanyapp",
-    "slug": "instafood-recipes-app",
+    "slug": "atps",
     "description": "React Native Recipes App Demo. Download source code for free at https://www.instamobile.io . You can also check out the Swift version at https://www.iosapptemplates.com and the Kotlin version at https://www.instakotlin.com .",
     "privacy": "public",
     "version": "1.0.0",
@@ -16,7 +16,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -25,17 +27,19 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.mgimary.instafoodrecipesapp"
+      "package": "com.mgimary.instafoodrecipesapp",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "5de59a04-dde6-4147-88b6-85d5f2451cf1"
+        "projectId": "9360d41e-3f89-4f62-b260-ac696c4cca16"
       }
     },
-
     "plugins": [
       [
         "expo-image-picker",
@@ -50,6 +54,7 @@
           "iCloudContainerEnvironment": "Production"
         }
       ]
-    ]
+    ],
+    "owner": "stanmelchizedek"
   }
 }
