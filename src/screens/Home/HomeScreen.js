@@ -105,6 +105,7 @@ const HomeScreen = ({ navigation }) => {
     firebase
       .firestore()
       .collection("posts")
+      .orderBy("postTime","desc")
       .onSnapshot((posts) => {
         const postsData = [];
         posts.forEach((post) => {

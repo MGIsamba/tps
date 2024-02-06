@@ -27,8 +27,6 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState(null);
 
-  // const auth = getAuth()
-
   const handleLogin = async () => {
     try {
       if (!email || !password) {
@@ -39,23 +37,8 @@ const LoginScreen = ({ navigation }) => {
       // Sign in with email and password
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
 
-      // Retrieve the user UID
-      const uid = userCredential.user.uid;
-
-      // Check if the UID exists in Firestore
-      const userDocRef = doc(db, 'users', uid);
-      const userDocSnapshot = await getDoc(userDocRef);
-
-      if (userDocSnapshot.exists()) {
-        // User exists in Firestore
-        navigation.replace("TPS Online");
-        console.log("Login successful");
-      } else {
-        // User does not exist in Firestore
-        setError("Invalid user credentials.");
-        // You may choose to sign out the user here or take other actions
-        await auth.signOut();
-      }
+      // Redirect user upon successful login
+      navigation.replace("TPS Online");
     } catch (error) {
       setError("Invalid email or password. Please try again.");
       console.error(error.message);
@@ -69,6 +52,7 @@ const LoginScreen = ({ navigation }) => {
         return;
       }
 
+      // Send password reset email
       await sendPasswordResetEmail(auth, email);
       setError(null); // Clear any existing error
       Alert.alert(
@@ -76,12 +60,11 @@ const LoginScreen = ({ navigation }) => {
         "Check your email for further instructions."
       );
     } catch (error) {
-      setError(
-        "Failed to send password reset email. Please check your email and try again."
-      );
+      setError("Failed to send password reset email. Please check your email and try again.");
       console.error(error.message);
     }
   };
+
 
   return (
     <SafeAreaView style={{ flex: 1, justifyContent: "center" }}>

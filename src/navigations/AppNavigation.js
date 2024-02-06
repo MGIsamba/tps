@@ -145,15 +145,45 @@ const BeatStack = () => {
   );
 };
 
-const HomeStack = () =>{
+const HomeStack = () => {
   return (
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Message" component={MessagesScreen} />
+      <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen name="Edit" component={EditProfileScreen} />
+    </Stack.Navigator>
+  );
+};
+
+const TrainerStack = ({ navigation }) => (
   <Stack.Navigator>
-    <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="Message" component={MessagesScreen}/>
-    <Stack.Screen name="Profile" component={ProfileScreen}/>
-    <Stack.Screen name="Edit" component={EditProfileScreen}/>
+    <Stack.Screen name="Trainers" component={TrainersScreen} />
+    <Stack.Screen name="TrainersList" component={TrainersListScreen} />
+    <Stack.Screen name="TrainerDetail" component={TrainerDetailScreen} />
   </Stack.Navigator>
-  )}
+);
+
+const PlatoonStack = ({ navigation }) => (
+  <Stack.Navigator>
+    <Stack.Screen name="Trainers" component={PlatoonScreen} />
+    <Stack.Screen name="RecipesList" component={RecipesListScreen} />
+    <Stack.Screen name="Recipe" component={RecipesScreen} />
+  </Stack.Navigator>
+);
+
+const AboutUsStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="AboutUs" component={AboutUsScreen} />
+      <Stack.Screen name="RecipesList" component={RecipesListScreen} />
+      <Stack.Screen
+        name="IngredientsDetails"
+        component={IngredientsDetailsScreen}
+      />
+    </Stack.Navigator>
+  );
+};
 
 const Drawer = createDrawerNavigator();
 
@@ -196,7 +226,7 @@ function DrawerStack() {
 
       <Drawer.Screen
         name="Trainer"
-        component={TrainersScreen}
+        component={TrainerStack}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name="home-outline" size={22} color={color} />
@@ -205,7 +235,7 @@ function DrawerStack() {
       />
       <Drawer.Screen
         name="Platoon"
-        component={PlatoonScreen}
+        component={PlatoonStack}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name="home-outline" size={22} color={color} />
@@ -233,7 +263,7 @@ function DrawerStack() {
       />*/}
       <Drawer.Screen
         name="AboutUs"
-        component={TrainerDetailScreen}
+        component={AboutUsStack}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name="person-outline" size={22} color={color} />

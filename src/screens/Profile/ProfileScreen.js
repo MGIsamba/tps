@@ -35,6 +35,13 @@ const ProfileScreen = ({ navigation, route }) => {
     fetchUserData();
   }, [route.params]);
 
+  const updateProfileImage = (imageUrl) => {
+    setUserDetails((prevDetails) => ({
+      ...prevDetails,
+      userImg: imageUrl,
+    }));
+  };
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
       <ScrollView
@@ -103,8 +110,9 @@ const ProfileScreen = ({ navigation, route }) => {
             <Image source={{ uri: userDetails.userImg }} style={styles.image} />
             <Text style={styles.userName}>{userDetails.fullName}</Text>
             <Text style={styles.userName}>
-              {userDetails.email} | {userDetails.phone}
+              {userDetails.email} | 
             </Text>
+            <Text>{userDetails.userId}</Text>
             <Text style={styles.userName}>{userDetails.about}</Text>
             <CustomButton
               label={"Edit Profile"}

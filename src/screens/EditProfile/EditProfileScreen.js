@@ -125,50 +125,53 @@ const EditProfileScreen = ({ navigation }) => {
     }
   };
 
+  const validateInputs = () => {
+    if (!userData.fullName || !userData.about || !userData.phone || !userData.country || !userData.city) {
+      Alert.alert("Validation Error", "Please fill in all fields.");
+      return false;
+    }
+    // You can add more specific validation checks here
+    return true;
+  };
+
   const handleUpdate = async () => {
     try {
+      if (!validateInputs()) return;
+
       let imgUrl = null;
-  
       if (image) {
         imgUrl = await uploadImage();
       }
-  
+
       const userDocRef = doc(db, "users", user.uid);
-  
-      try {
-        await updateDoc(userDocRef, {
-          fullName: userData.fullName,
-          about: userData.about,
-          phone: userData.phone,
-          country: userData.country,
-          city: userData.city,
-          userImg: image,
-        });
-  
-        console.log("User updated successfully!");
-        Alert.alert(
-          "Profile Updated!",
-          "Your profile has been updated successfully.",
-          [
-            {
-              text: "OK",
-              onPress: () => {
-                // Navigate back to ProfileScreen
-                navigation.navigate("Profile");
-              },
+      await updateDoc(userDocRef, {
+        fullName: userData.fullName,
+        about: userData.about,
+        phone: userData.phone,
+        country: userData.country,
+        city: userData.city,
+        userImg: image,
+      });
+
+      console.log("User updated successfully!");
+      Alert.alert(
+        "Profile Updated!",
+        "Your profile has been updated successfully.",
+        [
+          {
+            text: "OK",
+            onPress: () => {
+              navigation.navigate("Profile");
             },
-          ]
-        );
-      } catch (error) {
-        console.error("Error updating user:", error);
-        Alert.alert(
-          "Error",
-          "Failed to update profile. Please try again later."
-        );
-      }
+          },
+        ]
+      );
     } catch (error) {
       console.error("Error updating user:", error);
-      Alert.alert("Error", "Failed to update profile. Please try again later.");
+      Alert.alert(
+        "Error",
+        "Failed to update profile. Please try again later."
+      );
     }
   };
 
