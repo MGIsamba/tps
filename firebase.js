@@ -8,10 +8,10 @@ import { getFirestore } from "firebase/firestore";
 
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCQqcGF3In-Ky7YShGwc8btHgjm_5YYZbE",
+  apiKey: "AIzaSyCf9joY20oHxqhmSFUtAUYdd0eoRaD10_4",
   authDomain: "authDomain",
-  projectId: "acoy-1fede",
-  storageBucket: "acoy-1fede.appspot.com",
+  projectId: "alpha-30ecc",
+  storageBucket: "alpha-30ecc.appspot.com",
   messagingSenderId: "sendrId",
   appId: "appId"
 };
