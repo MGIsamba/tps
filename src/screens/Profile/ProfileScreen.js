@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, { useState, useEffect, useContext } from "react";
 import {
   View,
   Text,
@@ -7,45 +7,49 @@ import {
   StyleSheet,
   ScrollView,
   SafeAreaView,
-} from 'react-native';
+} from "react-native";
 
-import { db, auth } from '../../../firebase';
-import { getDoc, doc } from 'firebase/firestore';
-import CustomButton from '../../components/CustomButton';
+import { db, auth } from "../../../firebase";
+import { getDoc, doc } from "firebase/firestore";
+import CustomButton from "../../components/CustomButton";
 
-const ProfileScreen = ({navigation, route}) => {
+const ProfileScreen = ({ navigation, route }) => {
   const [userDetails, setUserDetails] = useState(null);
-  
+
   useEffect(() => {
     const userId = route.params ? route.params.userId : auth.currentUser.uid;
 
-    const fetchUserData = async() => {
-      const userDocRef = doc(db, 'users', userId);
+    const fetchUserData = async () => {
+      const userDocRef = doc(db, "users", userId);
 
-      try{
+      try {
         const userDocSnapshot = await getDoc(userDocRef);
-        if(userDocSnapshot.exists()){
+        if (userDocSnapshot.exists()) {
           const userData = userDocSnapshot.data();
-          setUserDetails(userData)
+          setUserDetails(userData);
         }
-      }catch(error){
-        console.error('Error fetching user data: ', error);
+      } catch (error) {
+        console.error("Error fetching user data: ", error);
       }
-    }
-    fetchUserData()
-  }, [route.params])
-     
+    };
+    fetchUserData();
+  }, [route.params]);
+
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
       <ScrollView
         style={styles.container}
-        contentContainerStyle={{justifyContent: 'center', alignItems: 'center'}}
-        showsVerticalScrollIndicator={false}>
+        contentContainerStyle={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        showsVerticalScrollIndicator={false}
+      >
         {/* <Image
           style={styles.userImg}
           source={{uri: userData ? userData.userImg || 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg' : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'}}
         /> */}
-      
+
         {/* <Text>{userDetails ? userDetails.userId : user.uid}</Text>
         <Text style={styles.aboutUser}>
      
@@ -94,12 +98,20 @@ const ProfileScreen = ({navigation, route}) => {
         {/* {posts.map((item) => (
           <PostCard key={item.id} item={item} onDelete={handleDelete} />
         ))} */}
-         {userDetails && (
+        {userDetails && (
           <>
+            <Image source={{ uri: userDetails.userImg }} style={styles.image} />
             <Text style={styles.userName}>{userDetails.fullName}</Text>
-            <Text style={styles.userName}>{userDetails.email} | {userDetails.phone}</Text>
+            <Text style={styles.userName}>
+              {userDetails.email} | {userDetails.phone}
+            </Text>
             <Text style={styles.userName}>{userDetails.about}</Text>
-            <CustomButton label={'Edit Profile'} onPress={() => {navigation.navigate('Edit')}}/>
+            <CustomButton
+              label={"Edit Profile"}
+              onPress={() => {
+                navigation.navigate("Edit");
+              }}
+            />
           </>
         )}
       </ScrollView>
@@ -112,7 +124,7 @@ export default ProfileScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     padding: 20,
   },
   userImg: {
@@ -122,25 +134,25 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginTop: 10,
     marginBottom: 10,
   },
   aboutUser: {
     fontSize: 12,
-    fontWeight: '600',
-    color: '#666',
-    textAlign: 'center',
+    fontWeight: "600",
+    color: "#666",
+    textAlign: "center",
     marginBottom: 10,
   },
   userBtnWrapper: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    width: '100%',
+    flexDirection: "row",
+    justifyContent: "center",
+    width: "100%",
     marginBottom: 10,
   },
   userBtn: {
-    borderColor: '#2e64e5',
+    borderColor: "#2e64e5",
     borderWidth: 2,
     borderRadius: 3,
     paddingVertical: 8,
@@ -148,26 +160,32 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   userBtnTxt: {
-    color: '#2e64e5',
+    color: "#2e64e5",
   },
   userInfoWrapper: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '100%',
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "100%",
     marginVertical: 20,
   },
   userInfoItem: {
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   userInfoTitle: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 5,
-    textAlign: 'center',
+    textAlign: "center",
   },
   userInfoSubTitle: {
     fontSize: 12,
-    color: '#666',
-    textAlign: 'center',
+    color: "#666",
+    textAlign: "center",
+  },
+  image: {
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    marginBottom: 20,
   },
 });

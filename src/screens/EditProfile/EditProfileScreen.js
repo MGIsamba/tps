@@ -42,6 +42,75 @@ const EditProfileScreen = ({ navigation }) => {
   const [userData, setUserData] = useState(null);
   const { user } = useAuth();
   
+  const uploadImage = async () => {
+    const blob = await new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.onload = function () {
+        resolve(xhr.response);
+      };
+      xhr.onerror = function () {
+        reject(new TypeError("Network request failed"));
+      };
+      xhr.responseType = "blob";
+      xhr.open("GET", image, true);
+      xhr.send(null);
+    });
+    const ref = firebase.storage().ref().child(`users/${uid()}`);
+    const snapshot = ref.put(blob);
+    snapshot.on(
+      firebase.storage.TaskEvent.STATE_CHANGED,
+      () => {
+        setUploading(true);
+      },
+      (error) => {
+        setUploading(false);
+        console.log(error);
+        blob.close();
+        return;
+      },
+      () => {
+        snapshot.snapshot.ref.getDownloadURL().then((url) => {
+          setUploading(false);
+          console.log("Download URL: ", url);
+          setImage(url);
+          blob.close();
+          return url;
+        });
+      }
+    );
+  };
+  const takePhotoFromCamera = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchCameraAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+
+    console.log(result);
+
+    if (!result.canceled) {
+      setImage(result.uri);
+    }
+  };
+
+  const pickImage = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+
+    console.log(result);
+
+    if (!result.canceled) {
+      setImage(result.uri);
+    }
+  };
+  
   const currentUserDoc = doc(db, "users", user.uid);
   const getUser = async () => {
 
@@ -58,14 +127,14 @@ const EditProfileScreen = ({ navigation }) => {
 
   const handleUpdate = async () => {
     try {
-      let imgUrl = await uploadImage();
-
-      if (imgUrl == null && userData.userImg) {
-        imgUrl = userData.userImg;
+      let imgUrl = null;
+  
+      if (image) {
+        imgUrl = await uploadImage();
       }
-
+  
       const userDocRef = doc(db, "users", user.uid);
-
+  
       try {
         await updateDoc(userDocRef, {
           fullName: userData.fullName,
@@ -73,9 +142,9 @@ const EditProfileScreen = ({ navigation }) => {
           phone: userData.phone,
           country: userData.country,
           city: userData.city,
-          // userImg: imgUrl,
+          userImg: image,
         });
-
+  
         console.log("User updated successfully!");
         Alert.alert(
           "Profile Updated!",
@@ -103,19 +172,6 @@ const EditProfileScreen = ({ navigation }) => {
     }
   };
 
-  const uploadImage = async () => {
-    const response = await fetch(image);
-    const blob = await response.blob();
-
-    const storageRef = ref(storage, `users/${uid()}`);
-    const snapshot = await put(storageRef, blob);
-
-    const url = await getDownloadURL(snapshot.ref);
-
-    setUserData({ ...userData, userImg: url });
-
-    return url;
-  };
 
   useEffect(() => {
     getUser();
@@ -135,37 +191,6 @@ const EditProfileScreen = ({ navigation }) => {
   //   });
   // };
 
-  const takePhotoFromCamera = async () => {
-    // No permissions request is necessary for launching the image library
-    let result = await ImagePicker.launchCameraAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsEditing: true,
-      aspect: [1, 1],
-      quality: 1,
-    });
-
-    console.log(result);
-
-    if (!result.canceled) {
-      setImage(result.uri);
-    }
-  };
-
-  const pickImage = async () => {
-    // No permissions request is necessary for launching the image library
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsEditing: true,
-      aspect: [1, 1],
-      quality: 1,
-    });
-
-    console.log(result);
-
-    if (!result.canceled) {
-      setImage(result.uri);
-    }
-  };
 
   renderInner = () => (
     <View style={styles.panel}>
@@ -181,7 +206,7 @@ const EditProfileScreen = ({ navigation }) => {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.panelButton}
-        onPress={choosePhotoFromLibrary}
+        onPress={pickImage}
       >
         <Text style={styles.panelButtonTitle}>Choose From Library</Text>
       </TouchableOpacity>
@@ -254,7 +279,7 @@ const EditProfileScreen = ({ navigation }) => {
               </ActionButton>
             </View>
           </TouchableOpacity> */}
-          {/* {image ? (
+          {image ? (
             <TouchableOpacity onPress={pickImage}>
               <Image source={{ uri: image }} style={styles.image} />
             </TouchableOpacity>
@@ -267,8 +292,8 @@ const EditProfileScreen = ({ navigation }) => {
                 <Text>Add Picture from Camera</Text>
               </TouchableOpacity>
             </>
-          )} */}
-          
+          )}
+
           <Text style={{ marginTop: 10, fontSize: 18, fontWeight: "bold" }}>
             {userData ? userData.fullName : ""}
           </Text>
