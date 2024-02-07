@@ -25,7 +25,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 //import ImagePicker from 'react-native-image-crop-picker';
 //import ImagePicker from 'react-native-image-picker'
 import * as ImagePicker from "expo-image-picker";
-import { firebase } from "../../../firebase";
+import { firebase, auth } from "../../../firebase";
 
 const AddPostScreen = () => {
   const [image, setImage] = useState(null);
@@ -68,13 +68,22 @@ const AddPostScreen = () => {
   const submitPost = async (imageUrl) => {
     // const imageUrl = await uploadImage();
     // console.log('Image Url: ', imageUrl);
+    
     console.log("Post: ", post);
+
+    const currentUser = auth.currentUser;
+    
+    if(!currentUser){
+      return;
+    }
+
+    const userId = currentUser.uid
 
     await firebase
       .firestore()
       .collection("posts")
       .add({
-        userId: "user id goes here after adding firebase auth",
+        userId: userId,
         post: post,
         postImg: imageUrl,
         postTime: firebase.firestore.Timestamp.fromDate(new Date()),
@@ -89,6 +98,7 @@ const AddPostScreen = () => {
             .doc(docRef.id)
             .update({ id: docRef.id });
         }
+        postRef.update({ id: postRef.id });
         console.log("Post Added!");
         Alert.alert(
           "Post published!",

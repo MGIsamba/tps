@@ -35,41 +35,37 @@ const  RegisterScreen = ({navigation}) => {
   const [open, setOpen] = useState(false);
   const [dobLabel, setDobLabel] = useState('Date of Birth');
 
-  const handleRegister = async() => {
+  const handleRegister = async () => {
     try {
       // Check for valid inputs
       if (!name || !email || !password || !confirmPassword) {
         setError('Please fill in all fields.');
         return;
       }
-
+  
       // Check if passwords match
       if (password !== confirmPassword) {
         setError('Passwords do not match. Please check and try again.');
         return;
       }
-
+  
       // Register the user
-      const userCredentials = await createUserWithEmailAndPassword(auth, email, name, password);
+      const userCredentials = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredentials.user;
-
-      //Fetch User UID
+  
+      // Fetch User UID
       const userUid = user.uid;
-
+  
+      // Add user details to Firestore
       const userDocRef = doc(collection(db, 'users'), userUid);
       await setDoc(userDocRef, {
+        userId: userUid, // Add the UID as a field in the document
         fullName: name,
         email: email
-      })
-
-      // const newUser = await addDoc(collection(db, 'users'), {
-      //   fullName: name,
-      //   email: email
-      // })
-      // console.log(newUser);
-
-      console.log('User succcessfully created');
-
+      });
+  
+      console.log('User successfully created');
+  
       navigation.navigate('Login');
       Alert.alert('Registered Successfully');
     } catch (error) {

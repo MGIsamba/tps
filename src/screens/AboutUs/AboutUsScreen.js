@@ -44,12 +44,12 @@ export default function AboutUsScreen(props) {
           officers in physical, mental and technological outlook. The Company is
           in conducive and attractive environment, located at Tanzania Police
           School – Moshi. TEAM A COY APP
+        </Text>
         <Text style={styles.infoDescriptionRecipe}>
           This Application was created under supervision of ASP Pazzia - OC A
           Coy and E.3143 Sgt Mdoe Former - A Coy Sir Major , who provided the
           Idea to the following recruits who manage to create the application :-
           *WP.14014 RC Mary J.6172 RC Nassir J.5974 RC Cyprian*
-        </Text>
         </Text>
       </View>
     </ScrollView>

@@ -15,24 +15,24 @@ import CustomButton from "../../components/CustomButton";
 
 const ProfileScreen = ({ navigation, route }) => {
   const [userDetails, setUserDetails] = useState(null);
-
-  useEffect(() => {
+  const getUser = async () => {
     const userId = route.params ? route.params.userId : auth.currentUser.uid;
 
-    const fetchUserData = async () => {
-      const userDocRef = doc(db, "users", userId);
+    const userDocRef = doc(db, "users", userId);
 
-      try {
-        const userDocSnapshot = await getDoc(userDocRef);
-        if (userDocSnapshot.exists()) {
-          const userData = userDocSnapshot.data();
-          setUserDetails(userData);
-        }
-      } catch (error) {
-        console.error("Error fetching user data: ", error);
+    try {
+      const userDocSnapshot = await getDoc(userDocRef);
+      if (userDocSnapshot.exists()) {
+        const userData = userDocSnapshot.data();
+        setUserDetails(userData);
       }
-    };
-    fetchUserData();
+    } catch (error) {
+      console.error("Error fetching user data: ", error);
+    }
+  };
+
+  useEffect(() => {
+    getUser();
   }, [route.params]);
 
   const updateProfileImage = (imageUrl) => {
@@ -109,9 +109,7 @@ const ProfileScreen = ({ navigation, route }) => {
           <>
             <Image source={{ uri: userDetails.userImg }} style={styles.image} />
             <Text style={styles.userName}>{userDetails.fullName}</Text>
-            <Text style={styles.userName}>
-              {userDetails.email} | 
-            </Text>
+            <Text style={styles.userName}>{userDetails.email} |</Text>
             <Text>{userDetails.userId}</Text>
             <Text style={styles.userName}>{userDetails.about}</Text>
             <CustomButton
