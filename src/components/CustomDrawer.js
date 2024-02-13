@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import {
   View,
   Text,
@@ -15,9 +16,32 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 import { signOut } from "firebase/auth";
-import { auth } from '../../firebase';
+import { getDoc, doc } from 'firebase/firestore';
+import { auth, db } from '../../firebase';
 
-const CustomDrawer = (props) => {
+const CustomDrawer = (props, route) => {
+  const [userDetails, setUserDetails] = useState(null)
+
+  const getUser = async () => {
+    const userId = route.params ? route.params.userId : auth.currentUser.uid;
+
+    const userDocRef = doc(db, "users", userId);
+
+    try {
+      const userDocSnapshot = await getDoc(userDocRef);
+      if (userDocSnapshot.exists()) {
+        const userDetails = userDocSnapshot.data();
+        setUserDetails(userDetails);
+      }
+    } catch (error) {
+      console.error("Error fetching user data: ", error);
+    }
+  };
+
+  useEffect(()=>{
+    getUser();
+  }, [route.params])
+
   const handleSignOut = async () => {
     try {
       await signOut(auth)
@@ -36,7 +60,12 @@ const CustomDrawer = (props) => {
           source={require('../../assets/images/menu-bg.jpeg')}
           style={{ padding: 20 }}>
           <Image
-            source={require('../../assets/trainers/pazzia.jpeg')}
+            source={{
+              uri: userDetails
+                ? userDetails.userImg ||
+                  "https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg"
+                : "https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg",
+            }}
             style={{ height: 80, width: 80, borderRadius: 40, marginBottom: 10 }}
           />
           <Text
@@ -46,7 +75,7 @@ const CustomDrawer = (props) => {
               fontFamily: 'Roboto-Medium',
               marginBottom: 5,
             }}>
-            ASP Pazzia
+            {userDetails ? userDetails.fullName : 'Test User'}
           </Text>
           <View style={{ flexDirection: 'row' }}>
             <Text
