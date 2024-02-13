@@ -23,8 +23,8 @@ const ProfileScreen = ({ navigation, route }) => {
     try {
       const userDocSnapshot = await getDoc(userDocRef);
       if (userDocSnapshot.exists()) {
-        const userData = userDocSnapshot.data();
-        setUserDetails(userData);
+        const userDetails = userDocSnapshot.data();
+        setUserDetails(userDetails);
       }
     } catch (error) {
       console.error("Error fetching user data: ", error);
@@ -52,16 +52,18 @@ const ProfileScreen = ({ navigation, route }) => {
         }}
         showsVerticalScrollIndicator={false}
       >
-        {/* <Image
+        <Image
           style={styles.userImg}
-          source={{uri: userData ? userData.userImg || 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg' : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'}}
-        /> */}
-
-        {/* <Text>{userDetails ? userDetails.userId : user.uid}</Text>
-        <Text style={styles.aboutUser}>
-     
-        </Text> */}
-        {/* <View style={styles.userBtnWrapper}>
+          source={{
+            uri: userDetails
+              ? userDetails.userImg ||
+                "https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg"
+              : "https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg",
+          }}
+        />
+        <Text>{userDetails ? userDetails.userId : "no user Id seen"}</Text>
+        <Text style={styles.aboutUser}>{userDetails ? userDetails.about : "No user about available"}</Text>
+        <View style={styles.userBtnWrapper}>
           {userDetails ? (
             <>
               <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
@@ -85,8 +87,7 @@ const ProfileScreen = ({ navigation, route }) => {
               </TouchableOpacity>
             </>
           )}
-        </View> */}
-
+        </View>
         {/* <View style={styles.userInfoWrapper}>
           <View style={styles.userInfoItem}>
             <Text style={styles.userInfoTitle}>{posts.length}</Text>
@@ -101,17 +102,16 @@ const ProfileScreen = ({ navigation, route }) => {
             <Text style={styles.userInfoSubTitle}>Following</Text>
           </View>
         </View> */}
-
         {/* {posts.map((item) => (
           <PostCard key={item.id} item={item} onDelete={handleDelete} />
         ))} */}
         {userDetails && (
           <>
-            <Image source={{ uri: userDetails.userImg }} style={styles.image} />
+            {/* <Image source={{ uri: userDetails.userImg }} style={styles.image} /> */}
             <Text style={styles.userName}>{userDetails.fullName}</Text>
             <Text style={styles.userName}>{userDetails.email} |</Text>
             <Text>{userDetails.userId}</Text>
-            <Text style={styles.userName}>{userDetails.about}</Text>
+            <Text style={styles.userName}></Text>
             <CustomButton
               label={"Edit Profile"}
               onPress={() => {
