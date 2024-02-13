@@ -15,6 +15,8 @@ import CustomButton from "../../components/CustomButton";
 
 const ProfileScreen = ({ navigation, route }) => {
   const [userDetails, setUserDetails] = useState(null);
+  const [currentUser, setCurrentUser] = useState(null);
+
   const getUser = async () => {
     const userId = route.params ? route.params.userId : auth.currentUser.uid;
 
@@ -31,8 +33,25 @@ const ProfileScreen = ({ navigation, route }) => {
     }
   };
 
+  const getCurrentUser = async () => {
+    const currentUserId = auth.currentUser.uid;
+
+    const userDocRef = doc(db, "users", currentUserId);
+
+    try {
+      const userDocSnapshot = await getDoc(userDocRef);
+      if (userDocSnapshot.exists()) {
+        const currentUser = userDocSnapshot.data();
+        setCurrentUser(currentUser);
+      }
+    } catch (error) {
+      console.error("Error fetching current user data: ", error);
+    }
+  };
+
   useEffect(() => {
     getUser();
+    getCurrentUser();
   }, [route.params]);
 
   const updateProfileImage = (imageUrl) => {
@@ -61,19 +80,10 @@ const ProfileScreen = ({ navigation, route }) => {
               : "https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg",
           }}
         />
-        <Text>{userDetails ? userDetails.userId : "no user Id seen"}</Text>
+        <Text style={styles.userName}>{userDetails ? userDetails.fullName : "no user Id seen"}</Text>
         <Text style={styles.aboutUser}>{userDetails ? userDetails.about : "No user about available"}</Text>
         <View style={styles.userBtnWrapper}>
-          {userDetails ? (
-            <>
-              <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
-                <Text style={styles.userBtnTxt}>Message</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
-                <Text style={styles.userBtnTxt}>Follow</Text>
-              </TouchableOpacity>
-            </>
-          ) : (
+          {currentUser && userDetails && currentUser.userId === userDetails.userId ? ( // Check if the current user matches the user whose profile is being viewed
             <>
               <TouchableOpacity
                 style={styles.userBtn}
@@ -86,7 +96,7 @@ const ProfileScreen = ({ navigation, route }) => {
                 <Text style={styles.userBtnTxt}>Logout</Text>
               </TouchableOpacity>
             </>
-          )}
+          ) : null}
         </View>
         {/* <View style={styles.userInfoWrapper}>
           <View style={styles.userInfoItem}>
@@ -105,21 +115,6 @@ const ProfileScreen = ({ navigation, route }) => {
         {/* {posts.map((item) => (
           <PostCard key={item.id} item={item} onDelete={handleDelete} />
         ))} */}
-        {userDetails && (
-          <>
-            {/* <Image source={{ uri: userDetails.userImg }} style={styles.image} /> */}
-            <Text style={styles.userName}>{userDetails.fullName}</Text>
-            <Text style={styles.userName}>{userDetails.email} |</Text>
-            <Text>{userDetails.userId}</Text>
-            <Text style={styles.userName}></Text>
-            <CustomButton
-              label={"Edit Profile"}
-              onPress={() => {
-                navigation.navigate("Edit");
-              }}
-            />
-          </>
-        )}
       </ScrollView>
     </SafeAreaView>
   );
