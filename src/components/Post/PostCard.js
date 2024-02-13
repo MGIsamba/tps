@@ -38,6 +38,13 @@ const PostCard = ({ item, route }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [userDetails, setUserDetails] = useState(null);
 
+  const updateProfileImage = (imageUrl) => {
+    setUserDetails((prevDetails) => ({
+      ...prevDetails,
+      userImg: imageUrl
+    }))
+  }
+
   const fetchUserData = async () => {
     try {
       const userDocRef = doc(db, "users", item.userId);
@@ -56,6 +63,8 @@ const PostCard = ({ item, route }) => {
   useEffect(() => {
     fetchUserData();
   }, []);
+
+  
 
   if (item.likes == 1) {
     likeText = "1 Like";

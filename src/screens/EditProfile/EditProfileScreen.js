@@ -284,7 +284,7 @@ const EditProfileScreen = ({ navigation }) => {
           </TouchableOpacity> */}
           {userData ? (
             <TouchableOpacity onPress={pickImage}>
-              <Image source={{ uri: userData.userImg }} style={styles.image} />
+              <Image source={{ uri: userData.userImg}} style={styles.image} />
             </TouchableOpacity>
           ) : (
             <>
