@@ -10,14 +10,27 @@ import {
   View,
   ActivityIndicator,
 } from "react-native";
-import { firebase } from "../../firebase";
+import { auth, db, firebase } from "../../firebase";
+import { doc, getDoc } from "firebase/firestore";
 
 const CommentsModal = ({ setModalVisible, post }) => {
   const [comment, setComment] = useState("");
   const [loading, setLoading] = useState(false);
+  const [userDetails, setUserDetails] = useState(null);
 
   const saveComment = async () => {
+    const currentUser = auth.currentUser.uid;
+
     if (comment.length > 0) {
+      const userDocRef = doc(db, "users", currentUser);
+      const userDocSnapshot = await getDoc(userDocRef);
+      if(!userDocSnapshot.exists()){
+        console.error("Current user document not found!");
+        return;
+      }
+
+      const userData = userDocSnapshot.data();
+
       setLoading(true)
       await firebase
         .firestore()
@@ -25,7 +38,8 @@ const CommentsModal = ({ setModalVisible, post }) => {
         .doc(post.id)
         .update({
           comments: firebase.firestore.FieldValue.arrayUnion({
-            username: "username",
+            userId: currentUser,
+            username: userData.fullName,
             comment,
           }),
         });
@@ -35,6 +49,7 @@ const CommentsModal = ({ setModalVisible, post }) => {
       Alert.alert("Comment can't be empty");
     }
   };
+
   return (
     <View style={styles.centeredView}>
       <Modal animationType="slide" transparent={true}>
