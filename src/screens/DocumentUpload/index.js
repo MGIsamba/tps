@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button, TextInput, Alert, TouchableOpacity, } from 'react-native';
+import { View, Text, Button, TextInput, Alert, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import { Picker } from '@react-native-picker/picker';
 import * as DocumentPicker from 'expo-document-picker';
@@ -12,13 +12,12 @@ import Ionicon from 'react-native-vector-icons/Ionicons';
 
 
 const DocumentUpload = () => {
-    const navgation = useNavigation();
+    const navigation = useNavigation();
     const [title, setTitle] = useState('');
     const [documentType, setDocumentType] = useState('pdf');
     const [description, setDescription] = useState('');
     const [documentPreview, setDocumentPreview] = useState(null);
-
-
+    const [loading, setLoading] = useState(false);
 
     const handleUpload = async () => {
         try {
@@ -33,7 +32,7 @@ const DocumentUpload = () => {
                 return Alert.alert("Please enter description");
             }
 
-
+            setLoading(true);
             const response = await uploadFile(documentPreview, "beats");
 
             await addDoc(collection(db, "beats"), {
@@ -45,39 +44,37 @@ const DocumentUpload = () => {
                 createdAt: new Date().toISOString(),
             });
 
+            setLoading(false);
             setDocumentPreview(null);
             setDocumentType('');
             setDescription('');
             setTitle('');
 
             Alert.alert("Document uploaded successfully");
-            navgation.navigate("Beat");
+            navigation.navigate("Beat");
         } catch (error) {
-            alert(error?.message)
+            setLoading(false);
+            Alert.alert("Error uploading document", error?.message || "An unknown error occurred");
         }
     };
 
     const handleOnSelectFile = async () => {
         try {
+            let allowedTypes;
             if (documentType === "pdf") {
-                const response = await DocumentPicker.getDocumentAsync({
-                    type: "application/pdf",
-                });
-
-                if (response.type === "cancel") return;
-                setDocumentPreview(response);
+                allowedTypes = "application/pdf";
+            } else {
+                allowedTypes = "image/*";
             }
-            
-            else {
-                const response = await DocumentPicker.getDocumentAsync({
-                    type: "image/*",
-                });
 
-                if (response.type === "cancel") return;
-                setDocumentPreview(response);
-            }
+            const response = await DocumentPicker.getDocumentAsync({
+                type: allowedTypes,
+            });
+
+            if (response.type === "cancel") return;
+            setDocumentPreview(response);
         } catch (error) {
-            Alert.alert(error?.message)
+            Alert.alert("Error selecting document", error?.message || "An unknown error occurred");
         }
     }
 
@@ -94,7 +91,7 @@ const DocumentUpload = () => {
             <View style={styles.sectionContainer}>
                 <Text style={styles.titleText}>Document Type:</Text>
                 <View style={styles.rowContainer}>
-                    <CheckButton
+                <CheckButton
                         lable="PDF"
                         check={documentType === "pdf"}
                         onPress={() => setDocumentType("pdf")}
@@ -104,7 +101,7 @@ const DocumentUpload = () => {
                         check={documentType === "img"}
                         onPress={() => setDocumentType("img")}
                     />
-                   </View>
+                </View>
             </View>
 
             <View style={styles.sectionContainer}>
@@ -140,13 +137,13 @@ const DocumentUpload = () => {
 
             <View style={styles.buttonContainer}>
                 <Button
-                    style={styles.button}
-                    title={documentPreview ? "Upload" : "Select Document"}
+                    title={loading ? "Uploading..." : (documentPreview ? "Upload" : "Select Document")}
                     onPress={documentPreview ? handleUpload : handleOnSelectFile}
+                    disabled={loading}
                 />
             </View>
         </View>
     );
 };
 
-export default DocumentUpload
+export default DocumentUpload;
